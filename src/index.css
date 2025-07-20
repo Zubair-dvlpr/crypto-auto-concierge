@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+    background-color: #000;
+    color: #ffffff;
+    /* overflow: hidden !important; */
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    font-family: "Mulish", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Mulish", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+#root {
+   overflow-x: hidden;
+}
+.howworkbg-cover {
+  background-size: 100% 100%;
+}
+.font-Nunito {
+  font-family: "Nunito", sans-serif;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-poppins {
+     font-family: "Poppins", sans-serif;
+}
+.swiper-button-next,
+  .swiper-button-prev {
+    @apply text-black dark:text-white text-xl font-bold;
+  }
