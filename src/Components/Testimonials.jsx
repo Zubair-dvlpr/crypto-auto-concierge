@@ -5,7 +5,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import avatar from "../../../assets/images/testimonialAvatar.png";
+import avatar from "../assets/images/testimonialAvatar.png";
+
 const testimonials = [
   {
     id: 1,
@@ -50,7 +51,7 @@ const testimonials = [
 ];
 
 
-const Testimonials = () => {
+const Testimonials = ({title, description}) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -59,10 +60,10 @@ const Testimonials = () => {
       {/* Top Section - Subtitle & Heading */}
       <div className="mb-8">
         <h2 className="text-[34px] text-center font-semibold mt-4">
-          Crypto Auto Concierge— Real Client Experiences
+          {title}
         </h2>
         <p className="text-lg text-center leading-7 mt-3 font-inter">
-          Real Clients. Real Deals. Verified Payouts.
+          {description}
         </p>
       </div>
 
@@ -128,13 +129,13 @@ const Testimonials = () => {
       <div className="flex justify-center gap-6 mt-8">
         <button
           ref={prevRef}
-          className="bg-white cursor-pointer text-gray-800 border border-gray-300 p-3 rounded-full shadow hover:bg-gray-100 transition"
+          className=" cursor-pointer  border border-gray-300 p-3 rounded-full shadow hover:border-[#D015FF] hover:text-[#D015FF] transition"
         >
           <FaChevronLeft />
         </button>
         <button
           ref={nextRef}
-          className="bg-white cursor-pointer text-gray-800 border border-gray-300 p-3 rounded-full shadow hover:bg-gray-100 transition"
+          className=" cursor-pointer  border border-gray-300 p-3 rounded-full shadow hover:border-[#D015FF] hover:text-[#D015FF] transition"
         >
           <FaChevronRight />
         </button>

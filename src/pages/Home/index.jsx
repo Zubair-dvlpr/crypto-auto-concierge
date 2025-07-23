@@ -2,8 +2,8 @@ import React from 'react';
 import Banner from './Components/Banner';
 import StatsSection from './Components/StatsSection';
 import TextMarquee from './Components/TextMarquee';
-import Testimonials from './Components/Testimonials';
-import Crypto from './Components/Crypto';
+import Testimonials from '../../components/Testimonials';
+import Crypto from '../../Components/Crypto';
 import CryptoPartners from './Components/CryptoPartners';
 import WhyChooseCrypto from './Components/WhyChooseCrypto';
 import HowCryptoWorks from './Components/HowCryptoWorks';
@@ -18,9 +18,15 @@ const Home = () => {
       <HowCryptoWorks />
       <TrustedProcess />
       <WhyChooseCrypto />
-      <Testimonials />
+      <Testimonials
+        title="Crypto Auto Concierge— Real Client Experiences"
+        description="Real Clients. Real Deals. Verified Payouts."
+      />
       <CryptoPartners />
-      <Crypto />
+      <Crypto
+      description="We handle it all: fund verification, instant payout, and private sale paperwork."
+      title="Start Your Crypto Vehicle Deal Today"
+      />
     </>
   )
 }

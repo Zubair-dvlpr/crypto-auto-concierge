@@ -17,7 +17,9 @@ h5,
 h6 {
     font-family: "Mulish", sans-serif;
 }
-
+.pricig-bg-cover {
+    background-size: 100% auto;
+}
 a {
     text-decoration: none;
 }

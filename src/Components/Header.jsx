@@ -6,10 +6,12 @@ const Header = () => {
   const location = useLocation();
   // ✅ Navigation Links Array
   const navLinks = [
-    { name: "Contact", path: "/cotact" },
-    { name: "Faq", path: "/faq" },
+    { name: "Home", path: "/" },
     { name: "Pricing", path: "/pricing" },
-    { name: "Services", path: "/services" }
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+    { name: "About", path: "/about" },
+    { name: "Blog", path: "/blog" }
   ];
 
   // Step 1: Check if the current route is Home ('/')
@@ -35,7 +37,7 @@ const Header = () => {
               key={index}
               to={link.path}
               className={({ isActive }) =>
-                `transition-all duration-300 ${isActive ? "text-[#84FF9F]" : `${isHomePage ? ' text-white' : 'text-[#FFF]'} hover:text-[#84FF9F]`
+                `transition-all duration-300 ${isActive ? "text-[#7CFEFD]" : `${isHomePage ? ' text-white' : 'text-[#FFF]'} hover:text-[#84FF9F]`
                 }`
               }
             >
@@ -48,7 +50,7 @@ const Header = () => {
         <div className="items-center hidden md:flex space-x-4">
          
           <Link to="/login">
-            <button className={` bg-linear-65 from-[#00D2FF] to-[#D015FF]  capitalize px-12 text-base font-semibold py-4 rounded-xl text-white`}>
+            <button className={` bg-linear-65 cursor-pointer from-[#00D2FF] to-[#D015FF]  capitalize px-12 text-base font-semibold py-4 rounded-xl text-white`}>
               Get Started
             </button>
           </Link>
