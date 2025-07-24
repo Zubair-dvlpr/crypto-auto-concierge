@@ -40,7 +40,7 @@ const CryptoPartners = () => {
         </p>
 
         {/* Gradient Button */}
-        <button className="bg-gradient-to-r from-[#00d2ff] to-[#7CFEFD]  px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">
+        <button className="btn-style">
           Start Your Crypto Deal
         </button>
       </div>

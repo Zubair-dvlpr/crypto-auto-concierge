@@ -1,5 +1,6 @@
 import React from 'react';
 import pricingBanner from '../../../assets/images/pricingBanner.svg'
+import { Link } from 'react-router-dom';
 const CryptoTransactionInfo = () => {
     return (
         <div className='pt-44 relative  before:content-[] before:block before:w-[458px]  before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px]  after:content-[] after:block after:w-[376px]  after:h-[376px] after:bg-[#ca19ff66] after:absolute after:top-[50%] after:translate-y-[-50%] after:right-0 after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>
@@ -11,9 +12,11 @@ const CryptoTransactionInfo = () => {
                     <p className="text-lg md:text-xl  mb-6 max-w-[671px] mx-auto">
                         We verify your crypto, handle the exchange, and ensure a secured payout - all for one simple fee. No hidden costs.
                     </p>
-                    <button className="bg-gradient-to-r from-[#00D2FF] to-[#D015FF] text-white text-base font-semibold px-6 py-3 rounded-xl transition">
-                        Contact Us
-                    </button>
+                    <Link to="/contact" className="inline-block">
+                        <button className="btn-style">
+                            Contact Us
+                        </button>
+                    </Link>
                 </div>
             </section>
         </div>

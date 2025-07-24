@@ -59,7 +59,7 @@ const ServiceFeeCalculator = () => {
                 <div className="text-center col-span-full mb-4">
                     <button
                         onClick={calculateFee}
-                        className="bg-gradient-to-r from-[#00D2FF] to-[#D015FF] text-white px-6 py-3 rounded-xl  transition inline-flex items-center"
+                        className="btn-style"
                     >
 
                         Calculate Now

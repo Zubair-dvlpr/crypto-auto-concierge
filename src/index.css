@@ -17,6 +17,15 @@ h5,
 h6 {
     font-family: "Mulish", sans-serif;
 }
+.btn-style {
+    @apply bg-gradient-to-r from-[#00D2FF] from-[-9.06%] font-bold to-[#D015FF] cursor-pointer to-90% text-white px-8 py-4 rounded-lg hover:bg-gradient-to-l transition-colors duration-700;
+}
+.label{
+  @apply text-lg font-semibold leading-7 mb-3 text-[#ffffffe7]
+}
+.input-style {
+    @apply bg-gradient-to-r w-full p-3.5 from-[#2e6cf41a] to-[#00d2ff1a] text-white placeholder:text-[#ffffff4d] rounded-lg  focus:outline-none focus:border-[#00d2ff] transition-colors duration-300;
+}
 .pricig-bg-cover {
     background-size: 100% auto;
 }

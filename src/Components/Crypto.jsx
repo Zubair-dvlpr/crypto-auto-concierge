@@ -13,7 +13,7 @@ const Crypto = ({title , description}) => {
         <p className="text-lg md:text-xl leading-9 max-w-xl mx-auto mb-6">
         {description}
         </p>
-        <button className="bg-linear-65 cursor-pointer from-[#00D2FF] to-[#D015FF]  font-semibold px-6 py-3 rounded-xl transition">
+        <button className="btn-style">
           Start Transaction
         </button>
       </div>

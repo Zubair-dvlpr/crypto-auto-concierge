@@ -50,8 +50,8 @@ const Header = () => {
         <div className="items-center hidden md:flex space-x-4">
          
           <Link to="/login">
-            <button className={` bg-linear-65 cursor-pointer from-[#00D2FF] to-[#D015FF]  capitalize px-12 text-base font-semibold py-4 rounded-xl text-white`}>
-              Get Started
+            <button className={` btn-style`}>
+              Corporate Login
             </button>
           </Link>
         </div>
@@ -80,7 +80,7 @@ const Header = () => {
               </NavLink>
             ))}
             <Link to="/login" onClick={() => setIsOpen(false)}>
-              <button className="bg-linear-65 from-[#00D2FF] to-[#D015FF]  capitalize px-4 py-2 rounded-xl text-white">
+              <button className="btn-style">
                 Get Started
               </button>
             </Link>

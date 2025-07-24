@@ -2,6 +2,14 @@ import React from 'react';
 import markIcon from '../../../assets/images/Wavy_Check.svg';
 import startTransistion from '../../../assets/images/startTransistion.svg';
 const OurPricing = () => {
+  const pricingData = [
+    { priceRange: "$5,000 – $10,000", serviceFee: "$500 flat" },
+    { priceRange: "$10,001 – $25,000", serviceFee: "$750 flat" },
+    { priceRange: "$25,001 – $50,000", serviceFee: "$1,250 flat" },
+    { priceRange: "$50,001 – $100,000", serviceFee: "2% of vehicle price" },
+    { priceRange: "$100,001 – $250,000", serviceFee: "2% of vehicle price" },
+    { priceRange: "$250,001+", serviceFee: "1% of vehicle price" }
+  ];
   return (
     <section className="grid mt-24 grid-cols-1 max-w-[1240px] mx-auto md:grid-cols-8 gap-10 py-12 px-2 md:px-0 rounded-xl shadow-lg">
       <h2 className='text-4xl font-bold col-span-full leading-12 capitalize'>Our prices</h2>
@@ -16,33 +24,19 @@ const OurPricing = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="text-center">
-              <td className="p-4 border border-gray-300">₿0.45</td>
-              <td className="p-4 border border-gray-300">₿0.03</td>
-            </tr>
-            <tr className="text-center">
-              <td className="p-4 border border-gray-300">₿0.72</td>
-              <td className="p-4 border border-gray-300">₿0.05</td>
-            </tr>
-            <tr className="text-center">
-              <td className="p-4 border border-gray-300">₿1.2</td>
-              <td className="p-4 border border-gray-300">₿0.08</td>
-            </tr>
-            <tr className="text-center">
-              <td className="p-4 border border-gray-300">₿1.2</td>
-              <td className="p-4 border border-gray-300">₿0.08</td>
-            </tr>
-            <tr className="text-center">
-              <td className="p-4 border border-gray-300">₿1.2</td>
-              <td className="p-4 border border-gray-300">₿0.08</td>
-            </tr>
+            {pricingData.map((item, index) => (
+              <tr key={index} className="text-center">
+                <td className="p-4 border border-gray-300">{item.priceRange}</td>
+                <td className="p-4 border border-gray-300">{item.serviceFee}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
 
       </div>
 
       <div></div>
-     
+
 
       {/* Right Side: Content */}
       <div className="flex col-span-3 flex-col justify-end">
@@ -72,9 +66,9 @@ const OurPricing = () => {
           </li>
         </ul>
 
-        <button className="flex w-fit  items-center justify-center bg-gradient-to-r from-[#00D2FF] to-[#D015FF] text-white text-base font-semibold px-6 py-3 rounded-xl transition">
+        <button className="flex w-fit  items-center justify-center btn-style">
           <img src={startTransistion} alt="contact" className="w-5 h-5 mr-2" />
-          <span>Contact Sales</span>
+          <span>Start Transaction</span>
         </button>
       </div>
     </section>
