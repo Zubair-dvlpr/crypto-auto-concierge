@@ -1,6 +1,7 @@
 import React from 'react';
 import markIcon from '../../../assets/images/Wavy_Check.svg';
 import startTransistion from '../../../assets/images/startTransistion.svg';
+import { Link } from 'react-router-dom';
 const OurPricing = () => {
   const pricingData = [
     { priceRange: "$5,000 – $10,000", serviceFee: "$500 flat" },
@@ -66,10 +67,12 @@ const OurPricing = () => {
           </li>
         </ul>
 
-        <button className="flex w-fit  items-center justify-center btn-style">
-          <img src={startTransistion} alt="contact" className="w-5 h-5 mr-2" />
-          <span>Start Transaction</span>
-        </button>
+        <Link to="/transaction">
+          <button className="flex w-fit  items-center justify-center btn-style">
+            <img src={startTransistion} alt="contact" className="w-5 h-5 mr-2" />
+            <span>Start Transaction</span>
+          </button>
+        </Link>
       </div>
     </section>
   );

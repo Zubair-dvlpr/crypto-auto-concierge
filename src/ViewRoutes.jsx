@@ -8,6 +8,7 @@ import About from './pages/about/Index';
 import Blog from './pages/blog/Index';
 import Contact from './pages/contact/Index';
 import Services from './pages/services/Index';
+import TransactionForm from './pages/transaction/Index';
 const PrivateRoute = ({ children }) => {
   const { user, } = useContext(AuthContext);
   return user ? children : <Navigate to="/login" />;
@@ -22,6 +23,7 @@ const ViewRoutes = () => {
       <Route path="/contact" element={<DefaultLayout><Contact /></DefaultLayout>} />
       <Route path="/about" element={<DefaultLayout><About /></DefaultLayout>} />
       <Route path="/blog" element={<DefaultLayout><Blog /></DefaultLayout>} />
+      <Route path="/transaction" element={<DefaultLayout><TransactionForm /></DefaultLayout>} />
       <Route path="*" element={"error page"} />
     </Routes>
   );

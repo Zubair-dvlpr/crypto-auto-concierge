@@ -1,5 +1,7 @@
 import React from 'react';
 import Cryptobgimg from '../assets/images/Cryptobgimg.svg'
+import { Link } from 'react-router-dom';
+
 const Crypto = ({title , description}) => {
   return (
     <div
@@ -13,9 +15,11 @@ const Crypto = ({title , description}) => {
         <p className="text-lg md:text-xl leading-9 max-w-xl mx-auto mb-6">
         {description}
         </p>
+        <Link to="/transaction">
         <button className="btn-style">
           Start Transaction
         </button>
+        </Link>
       </div>
     </div>
   );
