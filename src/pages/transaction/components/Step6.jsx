@@ -3,6 +3,9 @@ import React from "react";
 const Step6 = ({ data, setData }) => {
   return (
     <div>
+      <h3 className="appointment-title">
+        Please Enter The Sellers Details
+      </h3>
       {/* Full Legal Name */}
       <label className="block mb-6">
         <span className="block mb-4 text-lg font-semibold leading-7">Enter Full Legal Name</span>

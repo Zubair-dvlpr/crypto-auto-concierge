@@ -2,10 +2,11 @@ import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import CryptoPartnersImg from '../../../assets/images/Major.png';
 import WavyCheck from '../../../assets/images/Wavy_Check.svg';
+import { Link } from 'react-router-dom';
 const CryptoPartners = () => {
   return (
     <div className="max-w-[1240px] md:mx-auto px-3 grid grid-cols-1 md:grid-cols-2 items-center gap-10  py-16">
-      
+
       {/* Left Side Image */}
       <div>
         <img
@@ -27,7 +28,7 @@ const CryptoPartners = () => {
         <ul className="space-y-2 mb-6">
           {['Bitcoin (BTC)', 'Ethereum (ETH)', 'USDT & Stablecoins', 'Litecoin (LTC)', 'BNB & more'].map((item, index) => (
             <li key={index} className="flex items-start gap-3 ">
-             
+
               <img src={WavyCheck} alt="" />
               <span>{item}</span>
             </li>
@@ -40,9 +41,11 @@ const CryptoPartners = () => {
         </p>
 
         {/* Gradient Button */}
-        <button className="btn-style">
-          Start Your Crypto Deal
-        </button>
+        <Link to={"/pricing"}>
+          <button className="btn-style">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );

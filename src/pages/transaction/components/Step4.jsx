@@ -8,7 +8,7 @@ const Step4 = ({ data, setData }) => {
 
     return (
         <div>
-
+ <h3 className="appointment-title">Please Select Payment  Options</h3>
             {/* Preferred Payment Method */}
             <label className="block mb-6">
                 
@@ -49,10 +49,10 @@ const Step4 = ({ data, setData }) => {
 
             {/* Amount for Crypto #2 */}
             <label className="block mb-6">
-                <span className="block mb-4 text-lg font-semibold leading-7">Amount (Optional)</span>
+                <span className="block mb-4 text-lg font-semibold leading-7">Current Live Market Rate</span>
                 <input
                     type="text"
-                    placeholder="Enter the amount for this cryptocurrency."
+                    placeholder="Live Prices are Provided by Coinbase"
                     value={data.crypto2Amount}
                     onChange={(e) => setData({ ...data, crypto2Amount: e.target.value })}
                     className="input-style"
@@ -61,7 +61,7 @@ const Step4 = ({ data, setData }) => {
 
             {/* Total Dollar Amount */}
             <label className="block mb-6">
-                <span className="block mb-4 text-lg font-semibold leading-7">Total Dollar Amount</span>
+                <span className="block mb-4 text-lg font-semibold leading-7">CAC Fees</span>
                 <input
                     type="text"
                     placeholder="Total Value in CAD"

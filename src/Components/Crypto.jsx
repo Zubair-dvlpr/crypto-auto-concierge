@@ -15,7 +15,7 @@ const Crypto = ({title , description}) => {
         <p className="text-lg md:text-xl leading-9 max-w-xl mx-auto mb-6">
         {description}
         </p>
-        <Link to="/transaction">
+        <Link to="/transaction" >
         <button className="btn-style">
           Start Transaction
         </button>

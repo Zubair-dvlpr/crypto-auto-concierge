@@ -23,10 +23,10 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-xl font-semibold mb-6">Service</h3>
           <ul className="space-y-3 text-base">
-            <li><Link to="#" className="hover:text-white">Services</Link></li>
-            <li><Link to="#" className="hover:text-white">Pricing</Link></li>
-            <li><Link to="#" className="hover:text-white">For Sellers</Link></li>
-            <li><Link to="#" className="hover:text-white">For Buyers</Link></li>
+            <li><Link to="/services" className="hover:text-white">Services</Link></li>
+            <li><Link to="/pricing" className="hover:text-white">Pricing</Link></li>
+            <li><Link to="/transaction" className="hover:text-white">For Sellers</Link></li>
+            <li><Link to="/transaction" className="hover:text-white">For Buyers</Link></li>
           </ul>
         </div>
 
@@ -34,10 +34,10 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-xl font-semibold mb-6">Company</h3>
           <ul className="space-y-3 text-base">
-            <li><Link to="#" className="hover:text-white">Contact</Link></li>
-            <li><Link to="#" className="hover:text-white">About Us</Link></li>
-            <li><Link to="#" className="hover:text-white">Become Partner</Link></li>
-            <li><Link to="#" className="hover:text-white">Investor Relations</Link></li>
+            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+            <li><Link to="/about" className="hover:text-white">About Us</Link></li>
+            <li><Link to="/transaction" className="hover:text-white">Become Partner</Link></li>
+            <li><Link to="/transaction" className="hover:text-white">Investor Relations</Link></li>
           </ul>
         </div>
 
@@ -45,9 +45,9 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-xl font-semibold mb-6">Resources</h3>
           <ul className="space-y-3 text-base">
-            <li><Link to="#" className="hover:text-white">Privacy Policy</Link></li>
-            <li><Link to="#" className="hover:text-white">Blogs & Updates</Link></li>
-            <li><Link to="#" className="hover:text-white">Compliance and Legal</Link></li>
+            <li><Link  className="hover:text-white">Privacy Policy</Link></li>
+            <li><Link to="/blog" className="hover:text-white">Blogs & Updates</Link></li>
+            <li><Link  className="hover:text-white">Compliance and Legal</Link></li>
           </ul>
         </div>
 
@@ -69,10 +69,10 @@ const Footer = () => {
           </form>
 
           <div className="flex gap-4 mt-5">
-            <a href="https://facebook.com" className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaFacebookF /></a>
-            <a href="https://linkedin.com" className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaLinkedinIn /></a>
-            <a href="https://youtube.com" className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaYoutube /></a>
-            <a href="https://instagram.com" className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaInstagram /></a>
+            <a href="https://facebook.com" target='_blank' className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaFacebookF /></a>
+            <a href="https://linkedin.com" target='_blank'  className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaLinkedinIn /></a>
+            <a href="https://youtube.com" target='_blank'  className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaYoutube /></a>
+            <a href="https://instagram.com" target='_blank'  className="bg-[#00D2FF] p-2 rounded-md hover:scale-110 transition"><FaInstagram /></a>
           </div>
         </div>
       </div>

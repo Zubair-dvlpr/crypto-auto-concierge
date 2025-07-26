@@ -15,10 +15,10 @@ const TransactionForm = () => {
     const [formData, setFormData] = useState({
         party: "",
         saleType: "",
+        dealershipName: "",
         yearMakeModel: "",
         vehicleIdentificationNumber: "",
         purchasePrice: "",
-        saleType: "",
         emailAddress: "",
         name: "",
         number: "",
@@ -31,6 +31,7 @@ const TransactionForm = () => {
         billingNumber: "",
         billingEmail: "",
         payoutMethod: '',
+        conciergeServices: [],
         meetingDate: null,
         meetingTime: null,
         meetingLocation: '',
@@ -48,8 +49,8 @@ const TransactionForm = () => {
         4: "Let Us Do The Work — Just Answer A Few Quick Questions",
         5: "Let Us Do The Work — Just Answer A Few Quick Questions",
         6: "Let Us Do The Work — Just Answer A Few Quick Questions",
-        7: "Provide Final Confirmation Details",
-        8: "Let Us Do The Work — Just Answer A Few Quick Questions",
+        7: "Select How You’d Like to Receive Payment for Your Vehicle",
+        8: "Choose a Date, Time & CAC Location for the Appointment",
         9: "Finalize and Submit Your Information",
     };
 

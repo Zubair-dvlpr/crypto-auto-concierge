@@ -1,9 +1,11 @@
 import React from "react";
+import CustomSelect from "../../contact/components/CustomSelect";
 
 const Step2 = ({ data, setData }) => {
+  const saletypeptions = ["Private Sale", "Dealership"];
   return (
     <div>
-      <h3 className="appointment-title">Vehicle Information</h3>
+      <h3 className="appointment-title">Please Enter Vehicle Details</h3>
 
       {/* Year / Make / Model */}
       <label className="block mb-4">
@@ -43,17 +45,34 @@ const Step2 = ({ data, setData }) => {
         />
       </label>
 
-      {/* Sale Type */}
-      <label className="block">
-        <span className="block mb-3 text-lg font-semibold leading-7">Sale Type</span>
-        <input
-          type="text"
-          placeholder="Private Sale or Dealer sale"
-          value={data.saleType}
-          onChange={(e) => setData({ ...data, saleType: e.target.value })}
-          className="input-style"
+      {/* Sale Type Dropdown */}
+
+      <div className="mb-4">
+        <CustomSelect
+          label="Sale Type"
+          options={saletypeptions}
+          selected={data.saleType}
+          onChange={(val) =>
+            setData((prev) => ({ ...prev, saleType: val, dealershipName: "" }))
+          }
         />
-      </label>
+      </div>
+
+
+
+      {/* Dealership Name (only if Dealership is selected) */}
+      {data.saleType === "Dealership" && (
+        <label className="block mb-4">
+          <span className="block mb-3 text-lg font-semibold leading-7">Dealership Name</span>
+          <input
+            type="text"
+            placeholder="Enter the name of the dealership"
+            value={data.dealershipName || ""}
+            onChange={(e) => setData({ ...data, dealershipName: e.target.value })}
+            className="input-style"
+          />
+        </label>
+      )}
     </div>
   );
 };
