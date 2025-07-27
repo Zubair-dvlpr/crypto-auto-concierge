@@ -34,7 +34,7 @@ const Buyer = () => {
   const investorPartnershipData = {
     title: "Ready to use crypto for your next car purchase?",
     buttonText: "Start Your Crypto Purchase",
-    buttonLink: "/contact"
+    buttonLink: "/transaction"
   };
 
   return (

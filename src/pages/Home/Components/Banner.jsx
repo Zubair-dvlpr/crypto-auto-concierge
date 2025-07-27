@@ -14,7 +14,7 @@ const Banner = () => {
             </div>
 
             <div className="max-w-[1240px] text-center mx-auto py-5">
-                <Link className='text-center mx-auto' to="#start-deal">
+                <Link className='text-center mx-auto' to="/transaction">
                     <button className="btn-style">
                         Start Deal 
                     </button>

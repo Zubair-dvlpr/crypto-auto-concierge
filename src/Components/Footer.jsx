@@ -36,8 +36,8 @@ const Footer = () => {
           <ul className="space-y-3 text-base">
             <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-            <li><Link to="/transaction" className="hover:text-white">Become Partner</Link></li>
-            <li><Link to="/transaction" className="hover:text-white">Investor Relations</Link></li>
+            <li><Link to="/investorpartnerships" className="hover:text-white">Become Partner</Link></li>
+            <li><Link to="/investorpartnerships" className="hover:text-white">Investor Relations</Link></li>
           </ul>
         </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
             <li><Link to={"/privacypolicy"}  className="hover:text-white">Privacy Policy</Link></li>
             <li><Link to="/blog" className="hover:text-white">Blogs & Updates</Link></li>
             <li><Link  to={"/compliance"} className="hover:text-white">Compliance and Legal</Link></li>
-            <li><Link  to={"/investorpartnerships"} className="hover:text-white">Investor Relations & Partnerships</Link></li>
+           
           </ul>
         </div>
 

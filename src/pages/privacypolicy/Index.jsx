@@ -60,7 +60,7 @@ const Privacypolicy = () => {
       "Payment and payout method information",
       "Business registration or licensing information (for partners)",
       "Transaction-related information (Vehicle details, purchase price, crypto verification details)",
-    ] 
+    ]
   };
 
   const DisclosureInformation = {
@@ -71,7 +71,7 @@ const Privacypolicy = () => {
       "When required by law, regulation, or court order",
       "With client consent for a specific purpose",
       "To our CAC-approved partners for transaction facilitation and compliance verification",
-    ] 
+    ]
   };
 
   const Acknowledgment = {
@@ -79,7 +79,7 @@ const Privacypolicy = () => {
     description: "By using our services, clients consent to the collection, use, and disclosure of personal information for the purposes outlined in this policy. Clients have the right to withdraw consent, subject to legal and contractual limitations.",
   };
 
-  const ThirdParty  = {
+  const ThirdParty = {
     title: "Third-Party Links & Services",
     description: "Our website may contain links to third-party services. We are not responsible for the privacy practices of external sites or services linked from our platform.",
   };
@@ -98,7 +98,9 @@ const Privacypolicy = () => {
       { text: "905-409-0992", icon: phoneIcon },
       { text: "200 Front Street West, Toronto, Ontario, Canada ", icon: locationIcon },
       { text: "CAC212@gmail.com", icon: emailIcon }
-    ]
+    ],
+    buttonText: "Contact Us",
+    buttonLink: "/contact"
   };
 
   return (
@@ -106,7 +108,7 @@ const Privacypolicy = () => {
       <PagetitleSection
         paragraph={"At Crypto Auto Concierge (CAC), we are committed to protecting the privacy and confidentiality of all client information. This Privacy Policy explains how we collect, use, disclose, and protect personal information in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable Ontario laws."}
       />
-      
+
       <div className='relative after:content-[] after:block after:w-[376px]  after:h-[376px] after:bg-[#ca19ff66] after:absolute after:top-1/3 after:left-0 after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>
         <div className='max-w-[1240px] gap-x-12 gap-y-12 mx-auto px-2 grid md:grid-cols-2 grid-cols-1 sm:px-4 py-8 '>
           <div className='space-y-6'>

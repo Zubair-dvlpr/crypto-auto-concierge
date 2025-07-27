@@ -59,7 +59,7 @@ const Saller = () => {
     title: "Transparency & Compliance You Can Trust",
     description: "Choose from a variety of payout options— Cash, Email Money Transfer(EMT),Wire  Transfer, Certified Cheque on spot!",
     buttonText: "Sell my Vehicle",
-    buttonLink: "/contact"
+    buttonLink: "/transaction"
   };
 
   return (

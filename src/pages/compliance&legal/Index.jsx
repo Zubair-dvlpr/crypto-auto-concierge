@@ -5,6 +5,7 @@ import InfoSection from '../../Components/InfoSection';
 import markIcon from '../../assets/images/Wavy_Check.svg';
 import capa from '../../assets/images/Capa_1.svg';
 import DynamicBannerSection from '../../Components/DynamicFooterSection';
+import { Link } from 'react-router-dom';
 
 const Compliancelegal = () => {
   const legalDisclaimerScope = {
@@ -97,6 +98,11 @@ const Compliancelegal = () => {
           </div>
         </div>
 
+        <div className='max-w-[1240px] text-center mx-auto px-2 py-8'>
+          <Link to="/contact">
+           <button className='btn-style'>Contact Us</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
