@@ -22,22 +22,31 @@ const CryptoPartners = () => {
           We Work with All Major Cryptos
         </h2>
 
-        <p className="text-lg mb-4 font-semibold">Transact securely with:</p>
+        <p className="text-lg mb-4">
+          Buy or sell any vehicle using your preferred cryptocurrency — securely verified and processed through trusted partners.
+        </p>
+
+        <p className="text-lg mb-4 font-semibold">Supported Assets Include:</p>
 
         {/* List with Check Icons */}
         <ul className="space-y-2 mb-6">
-          {['Bitcoin (BTC)', 'Ethereum (ETH)', 'USDT & Stablecoins', 'Litecoin (LTC)', 'BNB & more'].map((item, index) => (
-            <li key={index} className="flex items-start gap-3 ">
-
+          {[
+            'Bitcoin (BTC)',
+            'Ethereum (ETH)',
+            'Litecoin (LTC)',
+            'Dogecoin (DOGE)',
+            'USDT & Stablecoins',
+            'Top 100 Altcoins (via approved exchanges)',
+          ].map((item, index) => (
+            <li key={index} className="flex items-start gap-3">
               <img src={WavyCheck} alt="" />
               <span>{item}</span>
             </li>
           ))}
         </ul>
 
-        {/* Paragraph */}
-        <p className=" mb-6">
-          Whether buying or selling, we facilitate seamless crypto transactions with verified clearing to ensure your funds and vehicle are always safe.
+        <p className="mb-6">
+          Every transaction is reviewed for source-of-funds compliance and verified through licensed platforms — giving you confidence at every step.
         </p>
 
         {/* Gradient Button */}

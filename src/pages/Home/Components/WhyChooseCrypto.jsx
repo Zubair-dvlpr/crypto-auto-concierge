@@ -9,22 +9,22 @@ const WhyChooseCrypto = () => {
         {
             icon: FacilitationIcon,
             number: '01',
-            title: 'End-to-End Deal Facilitation',
-            description: 'We handle crypto transfer, fund verification, paperwork, and handover.',
+            title: 'Fully Managed Transactions',
+            description: 'We take care of everything — from verifying crypto and preparing paperwork to handling the payout and final handover. You just show up and close the deal.',
             textColor: 'text-[#4555FF]' // dark gray
         },
         {
             icon: HandoverIcon,
             number: '02',
-            title: 'Funds Verified Before Handover',
-            description: 'No vehicle changes hands until funds are fully secured and confirmed.',
+            title: 'Funds Verified Before Any Handover',
+            description: 'The seller never hands over the keys until the buyer’s crypto is confirmed, verified, and fully cleared. Every wallet is screened for risk and compliance.',
             textColor: 'text-[#CA19FF]' // blue
         },
         {
             icon: PaymentsIcon,
             number: '03',
-            title: ' Instant Payments. Zero Hassle.',
-            description: 'Payouts processed on the spot with no waiting or hidden fees.Instantly',
+            title: 'Instant Payouts. No Delays.',
+            description: 'Once crypto is verified, the seller gets paid on the spot — via EMT, wire, bank draft, or even crypto. No waiting, no confusion, no extra charges.',
             textColor: 'text-[#7CFEFD]' // green
         }
     ];
@@ -36,9 +36,8 @@ const WhyChooseCrypto = () => {
                     Why Choose Crypto Auto Concierge?
                 </h2>
                 <p className=" mb-9 text-left max-w-3xl">
-                    Buy or Sell Any Car with We’re the first concierge service built for private vehicle transactions. <br />
-                    Buy any vehicle from any marketplace and pay securely with crypto. <br />
-                    Sellers receive crypto — or choose from a variety of instant payout options. — Instantly.
+                    Crypto Auto Concierge is Canada’s first full-service platform built specifically for buying and selling vehicles with cryptocurrency. <br />
+                    Whether you’re a buyer paying with crypto or a seller who wants secure cash, we handle every step — safely, legally, and instantly. No middlemen. No hidden fees.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">

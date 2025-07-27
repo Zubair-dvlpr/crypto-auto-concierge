@@ -16,27 +16,27 @@ const HowCryptoWorks = () => {
         {
             icon: submit,
             title: 'Submit Your Deal',
-            content: 'Both Buyer & Seller send us the deal details for verification.'
+            content: 'Both buyer and seller send us the deal details — vehicle info, payment preference, and documentation — for verification.'
         },
         {
             icon: Location,
             title: 'Meet at a CAC Partner Location',
-            content: 'Our concierge will guide you through the secure transaction process.'
+            content: 'We arrange a secure in-person meeting at a trusted CAC location, or virtually if agreed by both parties.'
         },
         {
             icon: Crypto,
             title: 'Buyer Sends Crypto',
-            content: 'Finalize the deal and take delivery, all verified and secured by our platform.'
+            content: 'We verify and track the buyer’s crypto transfer in real-time, with full compliance and audit checks.'
         },
         {
             icon: Paid,
             title: 'Seller Gets Paid',
-            content: 'Finalize the deal and take delivery, all verified and secured by our platform.'
+            content: 'Once funds are verified, we release same-day payout to the seller via EMT, wire, draft, or crypto — no delays, no risks.'
         },
         {
             icon: Handover,
             title: 'Complete the Sale & Handover',
-            content: 'Finalize the deal and take delivery, all verified and secured by our platform.'
+            content: 'Paperwork is finalized, keys change hands, and both parties leave with confidence. Deal done right.'
         }
     ];
 

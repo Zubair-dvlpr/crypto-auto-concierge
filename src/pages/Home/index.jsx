@@ -24,8 +24,8 @@ const Home = () => {
       />
       <CryptoPartners />
       <Crypto
-      description="We handle it all: fund verification, instant payout, and private sale paperwork."
-      title="Start Your Crypto Vehicle Deal Today"
+        description="We handle it all: fund verification, instant payout, and private sale paperwork."
+        title="Start Your Crypto Vehicle Deal Today"
       />
     </>
   )

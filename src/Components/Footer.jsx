@@ -25,8 +25,8 @@ const Footer = () => {
           <ul className="space-y-3 text-base">
             <li><Link to="/services" className="hover:text-white">Services</Link></li>
             <li><Link to="/pricing" className="hover:text-white">Pricing</Link></li>
-            <li><Link to="/transaction" className="hover:text-white">For Sellers</Link></li>
-            <li><Link to="/transaction" className="hover:text-white">For Buyers</Link></li>
+            <li><Link to="/saller" className="hover:text-white">For Sellers</Link></li>
+            <li><Link to="/buyer" className="hover:text-white">For Buyers</Link></li>
           </ul>
         </div>
 
@@ -45,9 +45,10 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-xl font-semibold mb-6">Resources</h3>
           <ul className="space-y-3 text-base">
-            <li><Link  className="hover:text-white">Privacy Policy</Link></li>
+            <li><Link to={"/privacypolicy"}  className="hover:text-white">Privacy Policy</Link></li>
             <li><Link to="/blog" className="hover:text-white">Blogs & Updates</Link></li>
-            <li><Link  className="hover:text-white">Compliance and Legal</Link></li>
+            <li><Link  to={"/compliance"} className="hover:text-white">Compliance and Legal</Link></li>
+            <li><Link  to={"/investorpartnerships"} className="hover:text-white">Investor Relations & Partnerships</Link></li>
           </ul>
         </div>
 
@@ -81,9 +82,9 @@ const Footer = () => {
       <div className="max-w-[1240px] mx-auto border-t border-gray-700 mt-10 py-4 px-4 flex flex-col md:flex-row justify-between items-center text-sm">
         <p>Crypto Auto Concierge (CAC)™ {new Date().getFullYear()}, All Right Reserved.</p>
         <div className="flex gap-3 mt-2 md:mt-0">
-          <a href="#" className="hover:text-white">Terms of Service</a>
+          <Link to={"/termsofservice"} className="hover:text-white">Terms of Service</Link>
           <span>|</span>
-          <a href="#" className="hover:text-white">Privacy Policy</a>
+          <Link to={"/privacypolicy"} className="hover:text-white">Privacy Policy</Link>
         </div>
       </div>
     </footer>

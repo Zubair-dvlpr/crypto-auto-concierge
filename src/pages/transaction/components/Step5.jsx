@@ -5,11 +5,11 @@ const Step5 = ({ data, setData }) => {
   const conciergeServices = [
     {
       value: "Vehicle Registration & Paperwork Assistance — $500",
-      label: "Add this service?",
+      label: "Add lien pay off",
     },
     {
       value: "Canada Wide Stolen Vehicle / Lien Check — $250",
-      label: "Add this service?",
+      label: "Add lien pay off",
     },
   ];
 

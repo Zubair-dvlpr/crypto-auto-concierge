@@ -6,13 +6,20 @@ const ContactForm = () => {
         fullName: '',
         phoneNumber: '',
         email: '',
-        subject: '',
         message: '',
-        userType: 'Seller',
+        userType: 'Crypto Buyer – Looking to Purchase a Vehicle',
     });
 
-    // Inside ContactForm component
-    const userTypeOptions = ["Seller", "Buyer", "Both", "General Inquiry"];
+    const userTypeOptions = [
+        "Crypto Buyer – Looking to Purchase a Vehicle",
+        "Seller – Accepting Cash or Crypto for My Vehicle",
+        "Dealership – Interested in Accepting Crypto Payments",
+        "Private Party – Selling or Buying with CAC Help",
+        "Business Partner / Vendor",
+        "Investor / Strategic Collaborator",
+        "Returning Client / Ongoing Deal",
+        "General Inquiry / Learning About CAC",
+    ];
 
     const [errors, setErrors] = useState({});
 
@@ -29,7 +36,6 @@ const ContactForm = () => {
         if (!formData.phoneNumber.trim()) newErrors.phoneNumber = 'Phone Number is required';
         if (!formData.email.trim()) newErrors.email = 'Email is required';
         if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid';
-        if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
         if (!formData.message.trim()) newErrors.message = 'Message is required';
         return newErrors;
     };
@@ -42,21 +48,20 @@ const ContactForm = () => {
         } else {
             console.log('Form Submitted:', formData);
             setErrors({});
-            // Optionally clear form
-            // setFormData({ fullName: '', phoneNumber: '', email: '', subject: '', message: '', userType: 'Seller' });
+            // Optionally reset form
+            // setFormData({ fullName: '', phoneNumber: '', email: '', message: '', userType: userTypeOptions[0] });
         }
     };
 
     return (
         <form
             onSubmit={handleSubmit}
-            className=" rounded-xl max-w-4xl mx-auto space-y-6"
+            className="rounded-xl max-w-4xl mx-auto space-y-6"
         >
-            <h2 className="text-3xl font-bold leading-12 ">Send Us a Message</h2>
+            <h2 className="text-3xl font-bold leading-12">Send Us a Message</h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-
-                <div className='space-y-6'>
+                <div className="space-y-6">
                     <div>
                         <label className="block label mb-1">Your Full Name</label>
                         <input
@@ -82,25 +87,9 @@ const ContactForm = () => {
                         />
                         {errors.phoneNumber && <p className="text-red-400 text-sm mt-1">{errors.phoneNumber}</p>}
                     </div>
-                </div>
-
-                <div>
-                    <label className="block label mb-1">Enter Subject</label>
-                    <textarea
-                        name="subject"
-                        type="text"
-                        rows={6}
-                        placeholder="Enter Subject"
-                        className="input-style"
-                        value={formData.subject}
-                        onChange={handleChange}
-                    > </textarea>
-                    {errors.subject && <p className="text-red-400 text-sm mt-1">{errors.subject}</p>}
-                </div>
 
 
 
-                <div className='space-y-6'>
                     <div>
                         <label className="block label mb-1">Your Email Address</label>
                         <input
@@ -114,32 +103,32 @@ const ContactForm = () => {
                         {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
                     </div>
 
-                   
-                        <CustomSelect
-                            label="Are You a"
-                            options={userTypeOptions}
-                            selected={formData.userType}
-                            onChange={(val) =>
-                                setFormData((prev) => ({ ...prev, userType: val }))
-                            }
-                        />
+                    <CustomSelect
+                        label="Are You A"
+                        options={userTypeOptions}
+                        selected={formData.userType}
+                        onChange={(val) =>
+                            setFormData((prev) => ({ ...prev, userType: val }))
+                        }
+                    />
                 </div>
 
-
-
-                <div>
+                <div className="space-y-6 ">
                     <label className="block label mb-1">Enter Message</label>
-                    <textarea
-                        name="message"
-                        rows="6"
-                        placeholder="Enter Message"
-                        className="input-style"
-                        value={formData.message}
-                        onChange={handleChange}
-                    ></textarea>
-                    {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message}</p>}
-                </div>
+                    <div className='md:h-[91%] bg-[#ffffff1a] rounded-lg'>
 
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Enter Message"
+                            className="input-style h-full"
+                            value={formData.message}
+                            onChange={handleChange}
+                        />
+                        {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message}</p>}
+                    </div>
+
+                </div>
 
 
             </div>

@@ -9,8 +9,8 @@ const CryptoTransactionInfo = () => {
                     <h2 className="text-3xl md:text-4xl font-bold leading-12  mb-2">
                         All-Inclusive Crypto Vehicle Transaction Fees <span className='text-[#7CFEFD]'>Transparent & Trusted </span>
                     </h2>
-                    <p className="text-lg md:text-xl  mb-6 max-w-[671px] mx-auto">
-                        We verify your crypto, handle the exchange, and ensure a secured payout - all for one simple fee. No hidden costs.
+                    <p className="text-lg md:text-xl  mb-6 max-w-[771px] mx-auto">
+                       At Crypto Auto Concierge, we simplify every crypto-to-cash vehicle transaction — verifying funds, converting crypto, and ensuring the seller gets paid securely. You pay a flat service fee, and we take care of the rest.
                     </p>
                     <Link to="/contact" className="inline-block">
                         <button className="btn-style">

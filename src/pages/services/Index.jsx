@@ -21,12 +21,22 @@ const stepsData = [
   { icon: CACPaperwork, title: 'Optional Registration & Paperwork Completed' },
 ];
 
-const featuresList = [
-  { icon: markIcon, text: 'Secure and transparent transactions powered by blockchain.' },
-  { icon: markIcon, text: 'Buy vehicles globally using your preferred cryptocurrency.' },
-  { icon: markIcon, text: 'Concierge-style customer support from start to finish.' },
-  { icon: markIcon, text: 'Fast processing with no middlemen or hidden fees.' },
+const buyerFeatures = [
+  "Buy any vehicle using your crypto — Bitcoin, Ethereum, USDT & more",
+  "Shop any marketplace or dealership — Facebook, Kijiji, Autotrader, or licensed sellers",
+  "No more awkward crypto talks — We handle the conversation, conversion, and verification",
+  "Secure and verified — We confirm seller ownership, lien status, and paperwork before you send funds",
+  "Global capability — Whether you’re in Canada or abroad, we facilitate the transaction and title transfer"
 ];
+
+const sellerFeatures = [
+  "Get paid your way — EMT, wire, bank draft, certified cheque, or crypto",
+  "Optional lien payoff — We handle loan closures and registration for just $149",
+  "Instant crypto fund verification — No guesswork, we monitor wallets and block flagged or blacklisted activity",
+  "Concierge-style support — We assist with paperwork, tax remittance, and Service Ontario submission",
+  "In-person payout available — Meet us at a CAC partner location for secure handover"
+];
+
 
 const Services = () => {
   return (
@@ -38,10 +48,11 @@ const Services = () => {
         position="left"
       />
       <WhyChooseUs
-      title="Why Choose Crypto Auto Concierge?"
-      image={whychooseimg} 
-      features={featuresList}
-    />
+        title="Why Choose Crypto Auto Concierge?"
+        image={whychooseimg}
+        buyers={buyerFeatures}
+        sellers={sellerFeatures}
+      />
       <Crypto
         description="We handle it all: fund verification, instant payout, and private sale paperwork."
         title="Your Crypto. Your Car. Your Concierge."
