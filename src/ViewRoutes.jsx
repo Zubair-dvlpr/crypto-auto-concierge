@@ -24,6 +24,8 @@ import PartnerInquiry from './pages/dashboard/PartnerInquiry';
 import CurrentPartner from './pages/dashboard/CurrentPartner';
 import Approvedcryptos from './pages/dashboard/Approvedcryptos';
 import Marketing from './pages/dashboard/Marketing';
+import Login from './pages/login/Index';
+import Singup from './pages/signup/Index';
 
 const PrivateRoute = ({ children }) => {
   const { user, } = useContext(AuthContext);
@@ -48,6 +50,8 @@ const ViewRoutes = () => {
       <Route path="/saller" element={<DefaultLayout><Saller /></DefaultLayout>} />
       <Route path="/buyer" element={<DefaultLayout><Buyer /></DefaultLayout>} />
 
+      <Route path="/login" element={<Login />} />
+      <Route path="/sign-up" element={<Singup />} />
       <Route path="/dashboard" element={<DashboardLayout><Overview /></DashboardLayout>} />
       <Route path="/transactions" element={<DashboardLayout><Transactions /></DashboardLayout>} />
       <Route path="/alltransactions" element={<DashboardLayout><Transactiontable /></DashboardLayout>} />
