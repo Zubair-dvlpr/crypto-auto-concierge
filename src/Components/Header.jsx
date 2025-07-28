@@ -49,7 +49,7 @@ const Header = () => {
         {/* Right - Login Button with Left Border */}
         <div className="items-center hidden md:flex space-x-4">
          
-          <Link to="/login">
+          <Link to="/dashboard">
             <button className={` btn-style`}>
               Corporate Login
             </button>
@@ -79,7 +79,7 @@ const Header = () => {
                 {link.name}
               </NavLink>
             ))}
-            <Link to="/login" onClick={() => setIsOpen(false)}>
+            <Link to="/dashboard">
               <button className="btn-style">
                 Get Started
               </button>

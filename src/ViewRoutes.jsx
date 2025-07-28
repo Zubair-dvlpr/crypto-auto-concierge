@@ -16,9 +16,18 @@ import Privacypolicy from './pages/privacypolicy/Index';
 import Saller from './pages/Saller/Index';
 import Buyer from './pages/buyer/Index';
 import PartnershipForm from './pages/partnershipForm/Index';
+import DashboardLayout from './Layout/DashboardLayout';
+import Overview from './pages/dashboard/Overview';
+import Transactions from './pages/dashboard/Transactions';
+import Transactiontable from './pages/dashboard/TransactionTable';
+import PartnerInquiry from './pages/dashboard/PartnerInquiry';
+import CurrentPartner from './pages/dashboard/CurrentPartner';
+import Approvedcryptos from './pages/dashboard/Approvedcryptos';
+import Marketing from './pages/dashboard/Marketing';
+
 const PrivateRoute = ({ children }) => {
   const { user, } = useContext(AuthContext);
-  return user ? children : <Navigate to="/login" />;
+  // return user ? children : <Navigate to="/dashboard" />;
 };
 
 const ViewRoutes = () => {
@@ -38,6 +47,14 @@ const ViewRoutes = () => {
       <Route path="/privacypolicy" element={<DefaultLayout><Privacypolicy /></DefaultLayout>} />
       <Route path="/saller" element={<DefaultLayout><Saller /></DefaultLayout>} />
       <Route path="/buyer" element={<DefaultLayout><Buyer /></DefaultLayout>} />
+
+      <Route path="/dashboard" element={<DashboardLayout><Overview /></DashboardLayout>} />
+      <Route path="/transactions" element={<DashboardLayout><Transactions /></DashboardLayout>} />
+      <Route path="/alltransactions" element={<DashboardLayout><Transactiontable /></DashboardLayout>} />
+      <Route path="/partner-Inquiry" element={<DashboardLayout><PartnerInquiry /></DashboardLayout>} />
+      <Route path="/current-partner" element={<DashboardLayout><CurrentPartner /></DashboardLayout>} />
+      <Route path="/approved-cryptos" element={<DashboardLayout><Approvedcryptos /></DashboardLayout>} />
+      <Route path="/marketing" element={<DashboardLayout><Marketing /></DashboardLayout>} />
       <Route path="*" element={"error page"} />
     </Routes>
   );
