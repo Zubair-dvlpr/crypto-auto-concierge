@@ -8,6 +8,7 @@ import locationIcon from '../../assets/images/location2.svg';
 import emailIcon from '../../assets/images/email2.svg';
 import capa from '../../assets/images/Capa_1.svg';
 import DynamicBannerSection from '../../Components/DynamicFooterSection';
+import { Link } from 'react-router-dom';
 
 const InvestorPartnerships = () => {
   const marketNeed1 = {
@@ -81,6 +82,12 @@ const InvestorPartnerships = () => {
         </div>
 
         <DynamicBannerSection {...investorPartnershipData} />
+
+        <div className='text-center -mt-11'>
+          <Link to={"/partnership-form"}>
+            <button className='btn-style'>Fill partner form</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

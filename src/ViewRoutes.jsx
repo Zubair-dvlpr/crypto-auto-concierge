@@ -15,6 +15,7 @@ import Termsofservice from './pages/termsofservice/Index';
 import Privacypolicy from './pages/privacypolicy/Index';
 import Saller from './pages/Saller/Index';
 import Buyer from './pages/buyer/Index';
+import PartnershipForm from './pages/partnershipForm/Index';
 const PrivateRoute = ({ children }) => {
   const { user, } = useContext(AuthContext);
   return user ? children : <Navigate to="/login" />;
@@ -30,6 +31,7 @@ const ViewRoutes = () => {
       <Route path="/about" element={<DefaultLayout><About /></DefaultLayout>} />
       <Route path="/blog" element={<DefaultLayout><Blog /></DefaultLayout>} />
       <Route path="/transaction" element={<DefaultLayout><TransactionForm /></DefaultLayout>} />
+      <Route path="/partnership-form" element={<DefaultLayout><PartnershipForm /></DefaultLayout>} />
       <Route path="/investorpartnerships" element={<DefaultLayout><InvestorPartnerships /></DefaultLayout>} />
       <Route path="/compliance" element={<DefaultLayout><Compliancelegal /></DefaultLayout>} />
       <Route path="/termsofservice" element={<DefaultLayout><Termsofservice /></DefaultLayout>} />

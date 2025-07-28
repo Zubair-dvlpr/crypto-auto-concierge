@@ -1,34 +1,31 @@
-import React from "react";
+import React, { forwardRef, useImperativeHandle } from "react";
 import { FaCheck } from "react-icons/fa";
+const Step5 = forwardRef(({ data, setData }, ref) => {
+  const required = data.conciergeServices?.length > 0;
 
-const Step5 = ({ data, setData }) => {
+  useImperativeHandle(ref, () => ({
+    validate: () => {
+      return required ? true : "Please select at least one concierge service.";
+    },
+  }));
+
   const conciergeServices = [
     {
       value: "Vehicle Registration & Paperwork Assistance — $500",
-      label: "Add lien pay off",
+      label: "Add Lien Payoff — $500",
     },
     {
       value: "Canada Wide Stolen Vehicle / Lien Check — $250",
-      label: "Add lien pay off",
+      label: "Add Stolen Vehicle / Lien Check — $250",
     },
   ];
 
   const handleCheckboxChange = (value) => {
     const selected = data.conciergeServices || [];
-
-    if (selected.includes(value)) {
-      // remove it
-      setData({
-        ...data,
-        conciergeServices: selected.filter((item) => item !== value),
-      });
-    } else {
-      // add it
-      setData({
-        ...data,
-        conciergeServices: [...selected, value],
-      });
-    }
+    const updated = selected.includes(value)
+      ? selected.filter((item) => item !== value)
+      : [...selected, value];
+    setData({ ...data, conciergeServices: updated });
   };
 
   return (
@@ -46,24 +43,22 @@ const Step5 = ({ data, setData }) => {
               <input
                 type="checkbox"
                 value={option.value}
-                checked={
-                  (data.conciergeServices || []).includes(option.value)
-                }
+                checked={data.conciergeServices?.includes(option.value)}
                 onChange={() => handleCheckboxChange(option.value)}
                 className="hidden"
               />
               <span
                 className={`w-5 h-5 flex items-center justify-center border-1 rounded-md ${
-                  (data.conciergeServices || []).includes(option.value)
+                  data.conciergeServices?.includes(option.value)
                     ? "border-[#00D2FF]"
                     : "border-[#00D2FF]"
                 }`}
               >
-                {(data.conciergeServices || []).includes(option.value) && (
+                {data.conciergeServices?.includes(option.value) && (
                   <FaCheck className="text-[#00D2FF] text-sm" />
                 )}
               </span>
-              <span className="ml-2.5 font-poppins text-base font-medium leading-8">
+              <span className="ml-2.5 font-poppins text-base font-medium leading-8 text-white">
                 {option.label}
               </span>
             </label>
@@ -72,6 +67,6 @@ const Step5 = ({ data, setData }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Step5;

@@ -1,8 +1,22 @@
-import React from "react";
+import React, { forwardRef, useImperativeHandle } from "react";
 import CustomSelect from "../../contact/components/CustomSelect";
 
-const Step2 = ({ data, setData }) => {
+const Step2 = forwardRef(({ data, setData }, ref) => {
   const saletypeptions = ["Private Sale", "Dealership"];
+
+  useImperativeHandle(ref, () => ({
+    validate: () => {
+      if (!data.yearMakeModel?.trim()) return "Please enter Year / Make / Model.";
+      if (!data.vehicleIdentificationNumber?.trim()) return "Please enter the Vehicle Identification Number.";
+      if (!data.purchasePrice?.trim()) return "Please enter the Purchase Price.";
+      if (!data.saleType) return "Please select a Sale Type.";
+      if (data.saleType === "Dealership" && !data.dealershipName?.trim()) {
+        return "Please enter the Dealership Name.";
+      }
+      return true;
+    },
+  }));
+
   return (
     <div>
       <h3 className="appointment-title">Please Enter Vehicle Details</h3>
@@ -46,7 +60,6 @@ const Step2 = ({ data, setData }) => {
       </label>
 
       {/* Sale Type Dropdown */}
-
       <div className="mb-4">
         <CustomSelect
           label="Sale Type"
@@ -58,8 +71,6 @@ const Step2 = ({ data, setData }) => {
         />
       </div>
 
-
-
       {/* Dealership Name (only if Dealership is selected) */}
       {data.saleType === "Dealership" && (
         <label className="block mb-4">
@@ -68,13 +79,15 @@ const Step2 = ({ data, setData }) => {
             type="text"
             placeholder="Enter the name of the dealership"
             value={data.dealershipName || ""}
-            onChange={(e) => setData({ ...data, dealershipName: e.target.value })}
+            onChange={(e) =>
+              setData({ ...data, dealershipName: e.target.value })
+            }
             className="input-style"
           />
         </label>
       )}
     </div>
   );
-};
+});
 
 export default Step2;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import carImg from "../../assets/images/carimg.png";
@@ -12,6 +12,9 @@ import Step7 from "./components/Step7";
 import Step9 from "./components/Step9";
 const TransactionForm = () => {
     const [step, setStep] = useState(1); // Track current step
+
+    const [error, setError] = useState(null);
+    const stepRef = useRef();
     const [formData, setFormData] = useState({
         party: "",
         saleType: "",
@@ -54,7 +57,16 @@ const TransactionForm = () => {
         9: "Finalize and Submit Your Information",
     };
 
-    const nextStep = () => {
+    const nextStep = async () => {
+        if (stepRef.current?.validate) {
+            const result = await stepRef.current.validate();
+            if (result !== true) {
+                setError(result);
+                return;
+            }
+        }
+
+        setError(null);
         if (step < 9) setStep(step + 1);
     };
 
@@ -62,35 +74,36 @@ const TransactionForm = () => {
         if (step > 1) setStep(step - 1);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        if (stepRef.current?.validate) {
+            const result = await stepRef.current.validate();
+            if (result !== true) {
+                setError(result);
+                return;
+            }
+        }
+
+        setError(null);
         console.log("Form Data Submitted:", formData);
     };
 
+
     const renderStep = () => {
+        const props = { data: formData, setData: setFormData };
         switch (step) {
-            case 1:
-                return <Step1 data={formData} setData={setFormData} />;
-            case 2:
-                return <Step2 data={formData} setData={setFormData} />;
-            case 3:
-                return <Step3 data={formData} setData={setFormData} />;
-            case 4:
-                return <Step4 data={formData} setData={setFormData} />;
-            case 5:
-                return <Step5 data={formData} setData={setFormData} />;
-            case 6:
-                return <Step6 data={formData} setData={setFormData} />;
-            case 7:
-                return <Step7 data={formData} setData={setFormData} />;
-            case 8:
-                return <Step8 data={formData} setData={setFormData} />;
-            case 9:
-                return <Step9 data={formData} setData={setFormData} />;
-            // Add cases for Step3, Step4, etc.
-            default:
-                return <div>Step {step} content goes here...</div>;
+            case 1: return <Step1 ref={stepRef} {...props}/>;
+            case 2: return <Step2 ref={stepRef} {...props} />;
+            case 3: return <Step3 ref={stepRef} {...props} />;
+            case 4: return <Step4 ref={stepRef} {...props} />;
+            case 5: return <Step5 ref={stepRef} {...props} />;
+            case 6: return <Step6 ref={stepRef} {...props} />;
+            case 7: return <Step7 ref={stepRef} {...props} />;
+            case 8: return <Step8 ref={stepRef} {...props} />;
+            case 9: return <Step9 ref={stepRef} {...props} />;
+            default: return null;
         }
     };
+
 
     return (
         <div className='pt-34 bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }}>
@@ -108,30 +121,41 @@ const TransactionForm = () => {
                             </p>
                             {renderStep()}
                         </div>
-                        <div className="mt-6 flex justify-between">
-                            <button
-                                onClick={prevStep}
-                                disabled={step === 1}
-                                className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50"
-                            >
-                                Previous
-                            </button>
-                            {step === 9 ? (
-                                <button
-                                    onClick={handleSubmit}
-                                    className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600"
-                                >
-                                    Submit
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={nextStep}
-                                    className="btn-style"
-                                >
-                                    Next
-                                </button>
+
+                        <div>
+                            {error && (
+                                <div className="text-red-500 font-medium">
+                                    {error}
+                                </div>
                             )}
+                            <div className="mt-6 flex justify-between">
+                                <button
+                                    onClick={prevStep}
+                                    disabled={step === 1}
+                                    className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50"
+                                >
+                                    Previous
+                                </button>
+                                {step === 9 ? (
+                                    <button
+                                        onClick={handleSubmit}
+                                        className="btn-style"
+                                    >
+                                        Submit
+                                    </button>
+                                ) : (
+                                    <button
+                                        onClick={nextStep}
+                                        className="btn-style"
+                                    >
+                                        Next
+                                    </button>
+                                )}
+                            </div>
                         </div>
+
+
+
                     </div>
 
                     {/* Right Column: Image */}

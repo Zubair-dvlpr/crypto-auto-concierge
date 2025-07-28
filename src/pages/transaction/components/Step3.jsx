@@ -1,10 +1,21 @@
-import React from "react";
+import React, { forwardRef, useImperativeHandle } from "react";
 
-const Step3 = ({ data, setData }) => {
+const Step3 = forwardRef(({ data, setData }, ref) => {
+  useImperativeHandle(ref, () => ({
+    validate: () => {
+      if (!data.name?.trim()) return "Please enter the buyer's full legal name.";
+      if (!data.number?.trim()) return "Please enter the buyer's phone number.";
+      if (!data.emailAddress?.trim()) return "Please enter the buyer's email address.";
+      // Optional: Add regex validation for email and phone format
+      return true;
+    },
+  }));
+
   return (
     <div>
-       <h3 className="appointment-title">Please Enter The Buyers Details</h3>
-      {/* Year / Make / Model */}
+      <h3 className="appointment-title">Please Enter The Buyer’s Details</h3>
+
+      {/* Full Name */}
       <label className="block mb-6">
         <span className="block mb-4 text-lg font-semibold leading-7">Enter Full Legal Name</span>
         <input
@@ -16,34 +27,31 @@ const Step3 = ({ data, setData }) => {
         />
       </label>
 
-      {/* Vehicle Identification Number */}
+      {/* Phone Number */}
       <label className="block mb-6">
         <span className="block mb-4 text-lg font-semibold leading-7">Enter Phone Number</span>
         <input
           type="text"
-          placeholder="Enter Numberl"
+          placeholder="Enter Number"
           value={data.number}
-          onChange={(e) =>
-            setData({ ...data, number: e.target.value })
-          }
+          onChange={(e) => setData({ ...data, number: e.target.value })}
           className="input-style"
         />
       </label>
 
-      {/* Purchase Price */}
+      {/* Email Address */}
       <label className="block mb-6">
         <span className="block mb-4 text-lg font-semibold leading-7">Enter Email Address</span>
         <input
           type="text"
-          placeholder="Enter the agreed purchase price in Canadian Dollars (CAD)."
+          placeholder="Enter Email Address"
           value={data.emailAddress}
           onChange={(e) => setData({ ...data, emailAddress: e.target.value })}
           className="input-style"
         />
       </label>
-
     </div>
   );
-};
+});
 
 export default Step3;
