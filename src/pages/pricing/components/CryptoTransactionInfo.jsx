@@ -10,7 +10,7 @@ const CryptoTransactionInfo = () => {
                         All-Inclusive Crypto Vehicle Transaction Fees <span className='text-[#7CFEFD]'>Transparent & Trusted </span>
                     </h2>
                     <p className="text-lg md:text-xl  mb-6 max-w-[771px] mx-auto">
-                       At Crypto Auto Concierge, we simplify every crypto-to-cash vehicle transaction — verifying funds, converting crypto, and ensuring the seller gets paid securely. You pay a flat service fee, and we take care of the rest.
+                       At Satoshi Drive, we simplify every crypto-to-cash vehicle transaction — verifying funds, converting crypto, and ensuring the seller gets paid securely. You pay a flat service fee, and we take care of the rest.
                     </p>
                     <Link to="/contact" className="inline-block">
                         <button className="btn-style">

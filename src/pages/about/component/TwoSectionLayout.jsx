@@ -24,7 +24,7 @@ const TwoSectionLayout = () => {
                             Your Trusted Partner for Crypto Vehicle Transactions
                         </h2>
                         <p className="text-[#ffffffe5] text-xl leading-8 mb-6">
-                            At Crypto Auto Concierge (CAC), we make crypto-based vehicle transactions simple, secure, and fully verified. We’re not a crypto exchange. We’re not a dealership. We’re a dedicated transaction concierge — managing every step from fund verification to secure seller payout.
+                            At Satoshi Drive, we make crypto-based vehicle transactions simple, secure, and fully verified. We’re not a crypto exchange. We’re not a dealership. We’re a dedicated transaction concierge — managing every step from fund verification to secure seller payout.
                         </p>
                         <Link to="/contact" className="inline-block">
                             <button className="btn-style">
@@ -42,7 +42,7 @@ const TwoSectionLayout = () => {
                             Proudly Canadian. Professionally Driven.
                         </h2>
                         <p className="text-[#ffffffe5] text-xl leading-8 mb-6">
-                            Headquartered at 200 Front Street West, Toronto, Ontario, CAC operates in the heart of Canada’s financial district. We proudly serve clients across Toronto, the Greater Toronto Area, and surrounding regions through our network of trusted partner locations. As a Canadian-founded business, we’re committed to delivering professional service backed by transparency, security, and local expertise.
+                            Headquartered at 200 Front Street West, Toronto, Ontario, Satoshi Drive operates in the heart of Canada’s financial district. We proudly serve clients across Toronto, the Greater Toronto Area, and surrounding regions through our network of trusted partner locations. As a Canadian-founded business, we’re committed to delivering professional service backed by transparency, security, and local expertise.
                         </p>
 
                     </div>

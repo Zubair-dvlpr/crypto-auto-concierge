@@ -53,7 +53,7 @@ const TransactionForm = () => {
         5: "Let Us Do The Work — Just Answer A Few Quick Questions",
         6: "Let Us Do The Work — Just Answer A Few Quick Questions",
         7: "Select How You’d Like to Receive Payment for Your Vehicle",
-        8: "Choose a Date, Time & CAC Location for the Appointment",
+        8: "Choose a Date, Time & Satoshi Drive Location for the Appointment",
         9: "Finalize and Submit Your Information",
     };
 

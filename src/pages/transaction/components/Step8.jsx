@@ -6,18 +6,18 @@ import CustomSelect from "../../contact/components/CustomSelect";
 
 const Step8 = forwardRef(({ data, setData }, ref) => {
   const cacLocationOptions = [
-    "CAC Toronto",
-    "CAC Mississauga",
-    "CAC London",
-    "CAC Scarborough",
-    "CAC Pickering",
+    "Satoshi Drive Toronto",
+    "Satoshi Drive Mississauga",
+    "Satoshi Drive London",
+    "Satoshi Drive Scarborough",
+    "Satoshi Drive Pickering",
   ];
 
   useImperativeHandle(ref, () => ({
     validate: () => {
       if (!data.meetingDate) return "Please select a requested meeting date.";
       if (!data.meetingTime) return "Please select a meeting time.";
-      if (!data.meetingLocation) return "Please select a preferred CAC meeting location.";
+      if (!data.meetingLocation) return "Please select a preferred Satoshi Drive meeting location.";
       return true;
     },
   }));
@@ -25,7 +25,7 @@ const Step8 = forwardRef(({ data, setData }, ref) => {
   return (
     <div className="text-white space-y-6">
       <h2 className="text-xl font-semibold">
-        You’ll receive an email with transaction details. A CAC team member will call both parties to confirm.
+        You’ll receive an email with transaction details. A Satoshi Drive team member will call both parties to confirm.
       </h2>
 
       {/* Meeting Date */}

@@ -12,7 +12,7 @@ const Pricing = () => {
       <OurPricing />
       <ServiceFeeCalculator />
       <Testimonials
-        title="Why choose CAC"
+        title="Why choose Satoshi Drive"
         description="Real Clients. Real Deals. Verified Payouts."
       />
       <Crypto

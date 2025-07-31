@@ -16,22 +16,22 @@ const Termsofservice = () => {
     title: "Scope of Services",
     icon: markIcon,
     items: [
-      "Verification of cryptocurrency funds through CAC-approved, licensed partners",
+      "Verification of cryptocurrency funds through Satoshi Drive-approved, licensed partners",
       "Arrangement of seller payout via client-selected method (Interac e-Transfer, wire transfer, certified bank draft, or cash where permitted)",
       "Optional concierge services such as transaction facilitation, paperwork preparation, and registration assistance",
       "Internal transaction record-keeping for risk management and compliance purposes",
     ],
-    description: "CAC provides transaction facilitation services for private vehicle transactions involving cryptocurrency. Our services include:",
-    lastdesc: "CAC is not a bank, financial institution, exchange, crypto brokerage, or investment advisor We do not custody, hold, or transfer client cryptocurrency."
+    description: "Satoshi Drive provides transaction facilitation services for private vehicle transactions involving cryptocurrency. Our services include:",
+    lastdesc: "Satoshi Drive is not a bank, financial institution, exchange, crypto brokerage, or investment advisor We do not custody, hold, or transfer client cryptocurrency."
   };
 
   const complianceAndVerification = {
     title: "Compliance, Due Diligence & Verification Rights",
     icon: markIcon,
     items: [
-      "CAC complies with Canadian regulatory standards, including FINTRAC KYC, AML, and CDD requirements through our partner network",
+      "Satoshi Drive complies with Canadian regulatory standards, including FINTRAC KYC, AML, and CDD requirements through our partner network",
       "We reserve the right to request additional information or documentation at any stage of the transaction",
-      "CAC may refuse, suspend, or terminate any transaction at our sole discretion for non-compliance or risk management concerns",
+      "Satoshi Drive may refuse, suspend, or terminate any transaction at our sole discretion for non-compliance or risk management concerns",
       "Clients acknowledge that failure to comply with verification requests may result in immediate service cancellation"
     ]
   };
@@ -52,10 +52,10 @@ const Termsofservice = () => {
     title: "Limitation of Liability",
     icon: markIcon,
     items: [
-      "CAC assumes no responsibility for the condition, ownership, or legal standing of any vehicle involved in a transaction",
-      "CAC is not liable for disputes, claims, or damages arising between the buyer and seller before, during, or after the transaction",
-      "CAC’s liability is strictly limited to the services explicitly agreed upon in writing and is capped to the total service fee paid by the client",
-      "CAC shall not be held responsible for delays or issues arising from third-party service providers, payment processors, or partners"
+      "Satoshi Drive assumes no responsibility for the condition, ownership, or legal standing of any vehicle involved in a transaction",
+      "Satoshi Drive is not liable for disputes, claims, or damages arising between the buyer and seller before, during, or after the transaction",
+      "Satoshi Drive liability is strictly limited to the services explicitly agreed upon in writing and is capped to the total service fee paid by the client",
+      "Satoshi Drive shall not be held responsible for delays or issues arising from third-party service providers, payment processors, or partners"
     ]
   };
 
@@ -75,9 +75,9 @@ const Termsofservice = () => {
     items: [
       "The client provides false or misleading information",
       "A transaction is deemed high-risk or non-compliant",
-      "The client fails to meet CAC’s internal risk and compliance standards"
+      "The client fails to meet Satoshi Drive internal risk and compliance standards"
     ],
-    description: "CAC reserves the right to refuse or terminate services at any time if:"
+    description: "Satoshi Drive reserves the right to refuse or terminate services at any time if:"
   };
 
   const feesAndRefunds = {
@@ -86,7 +86,7 @@ const Termsofservice = () => {
     items: [
       "All service fees are set forth on our Pricing Page and must be agreed upon prior to service engagement",
       "Fees for optional services, such as paperwork assistance or on-site facilitation, are additional and non-refundable once service has commenced",
-      "Payments for services are final; CAC does not offer refunds for services rendered or transactions initiated"
+      "Payments for services are final; Satoshi Drive does not offer refunds for services rendered or transactions initiated"
     ]
   };
 
@@ -97,7 +97,7 @@ const Termsofservice = () => {
 
   const amendments = {
     title: "Amendments & Updates",
-    description: "CAC reserves the right to update or modify these Terms at any time without prior notice. The most current version will be posted on our website, and continued use of services constitutes acceptance of the updated Terms.",
+    description: "Satoshi Drive reserves the right to update or modify these Terms at any time without prior notice. The most current version will be posted on our website, and continued use of services constitutes acceptance of the updated Terms.",
   };
 
 
@@ -109,14 +109,14 @@ const Termsofservice = () => {
     items: [
       { text: "905-409-0992", icon: phoneIcon },
       { text: "200 Front Street West, Toronto, Ontario, Canada ", icon: locationIcon },
-      { text: "CAC212@gmail.com", icon: emailIcon }
+      { text: "SatoshiDrive@gmail.com", icon: emailIcon }
     ]
   };
 
   return (
     <div className='pt-32 relative  before:content-[] before:block before:w-[458px]  before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px]   bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }} >
       <PagetitleSection
-        paragraph={"These Terms of Service (“Terms”) govern the use of services provided by Crypto Auto Concierge (CAC), a Canadian business headquartered at 200 Front Street West, Toronto, Ontario, Canada. By engaging with our services, you agree to comply with these Terms."}
+        paragraph={"These Terms of Service (“Terms”) govern the use of services provided by Satoshi Drive, a Canadian business headquartered at 200 Front Street West, Toronto, Ontario, Canada. By engaging with our services, you agree to comply with these Terms."}
       />
 
       <div className='relative after:content-[] after:block after:w-[376px]  after:h-[376px] after:bg-[#ca19ff66] after:absolute after:top-1/3 after:left-0 after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>

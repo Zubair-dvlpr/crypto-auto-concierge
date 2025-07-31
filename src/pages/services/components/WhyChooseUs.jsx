@@ -15,7 +15,7 @@ const WhyChooseUs = ({ title, image, features, buyers = [], sellers = [], intro 
 
       {/* Right Side: Content */}
       <div>
-        <h2 className="text-4xl font-bold mb-4">Why Choose Crypto Auto Concierge?</h2>
+        <h2 className="text-4xl font-bold mb-4">Why Choose Satoshi Drive?</h2>
         <div className="space-y-8 text-xl">
           {/* Buyers Section */}
           <div>

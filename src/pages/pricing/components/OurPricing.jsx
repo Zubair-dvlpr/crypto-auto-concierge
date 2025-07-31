@@ -42,7 +42,7 @@ const OurPricing = () => {
   const listTitles = [
     "Instant Crypto Fund Verification",
     "Same-Day Seller Payouts",
-    "Secure CAC Partner Locations",
+    "Secure Satoshi Drive Partner Locations",
     "Private Sale Paperwork Help",
     "Lien Payoff Service",
     "Full Buyer & Seller Support"

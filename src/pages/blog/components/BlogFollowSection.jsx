@@ -3,7 +3,7 @@ import markIcon from '../../../assets/images/Wavy_Check.svg';
 const BlogFollowSection = () => {
   const points = [
     'Stay informed on industry changes',
-    'Get exclusive updates on CAC services and offers',
+    'Get exclusive updates on Satoshi Drive services and offers',
     'Learn tips to protect your crypto vehicle transactions',
   ];
 

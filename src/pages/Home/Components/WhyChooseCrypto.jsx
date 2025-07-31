@@ -33,10 +33,10 @@ const WhyChooseCrypto = () => {
         <div className='relative py-12 px-3 md:px-0 overflow-hidden before:content-[] before:block before:w-[458px]  before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px]  after:content-[] after:block after:w-[458px]  after:h-[458px] after:bg-[#ca19ff66] after:absolute after:bottom-[-100px] after:right-[-100px] after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>
             <div className="max-w-[1240px] mx-auto">
                 <h2 className="text-4xl font-bold text-left leading-16 mb-2">
-                    Why Choose Crypto Auto Concierge?
+                    Why Choose Satoshi Drive?
                 </h2>
                 <p className=" mb-9 text-left max-w-3xl">
-                    Crypto Auto Concierge is Canada’s first full-service platform built specifically for buying and selling vehicles with cryptocurrency. <br />
+                    Satoshi Drive is Canada’s first full-service platform built specifically for buying and selling vehicles with cryptocurrency. <br />
                     Whether you’re a buyer paying with crypto or a seller who wants secure cash, we handle every step — safely, legally, and instantly. No middlemen. No hidden fees.
                 </p>
 

@@ -12,7 +12,7 @@ const Saller = () => {
       icon: markIcon, // just one icon used globally (e.g., handshake icon)
       items: [
         "Find your vehicle on any website or dealership",
-        "Submit the listing to CAC and complete secure ID verification",
+        "Submit the listing to Satoshi Drive and complete secure ID verification",
         "Pay in crypto through our secure gateway",
         "We verify and process the payment",
         "The seller gets CAD or crypto, and you get the car — done",
@@ -20,7 +20,7 @@ const Saller = () => {
     };
   
     const whyBuyersChooseCAC = {
-      title: "Why Buyers Choose CAC",
+      title: "Why Buyers Choose Satoshi Drive",
       icon: markIcon, // just one icon used globally (e.g., handshake icon)
       items: [
         "Pay directly in crypto — no need to convert or cash out",
@@ -45,7 +45,7 @@ const Saller = () => {
 
   const trustedCompliantCanadian = {
     title: "Trusted. Compliant. Canadian",
-    description: "All CAC partner locations are:",
+    description: "All Satoshi Drive partner locations are:",
     icon: markIcon, // just one icon used globally (e.g., handshake icon)
     items: [
       "Registered with FINTRAC",
@@ -66,7 +66,7 @@ const Saller = () => {
     <div className='pt-32 relative  before:content-[] before:block before:w-[458px]  before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px]   bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }} >
       <PagetitleSection
         title={"Accept Crypto Buyers Without the Risk"}
-        paragraph={"Selling to a crypto buyer? CAC ensures you get paid in Canadian dollars or verified crypto, while we handle wallet screening, compliance checks, and transaction processing."}
+        paragraph={"Selling to a crypto buyer? Satoshi Drive ensures you get paid in Canadian dollars or verified crypto, while we handle wallet screening, compliance checks, and transaction processing."}
       />
 
 

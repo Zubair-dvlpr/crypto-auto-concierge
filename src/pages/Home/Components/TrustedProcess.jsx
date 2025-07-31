@@ -34,7 +34,7 @@ const TrustedProcess = () => {
       </h2>
       <p className="max-w-2xl mx-auto mb-10">
         Buy or sell any vehicle on any marketplace with crypto — safely and
-seamlessly.Meet Safely at a CAC Partner Location
+seamlessly.Meet Safely at a Satoshi Drive Partner Location
       </p>
 
       {/* Steps */}

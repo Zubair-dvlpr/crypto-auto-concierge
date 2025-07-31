@@ -12,7 +12,7 @@ const Buyer = () => {
     icon: markIcon, // just one icon used globally (e.g., handshake icon)
     items: [
       "Find your vehicle on any website or dealership",
-      "Submit the listing to CAC and complete secure ID verification",
+      "Submit the listing to Satoshi Drive and complete secure ID verification",
       "Pay in crypto through our secure gateway",
       "We verify and process the payment",
       "The seller gets CAD or crypto, and you get the car — done",
@@ -20,7 +20,7 @@ const Buyer = () => {
   };
 
   const whyBuyersChooseCAC = {
-    title: "Why Buyers Choose CAC",
+    title: "Why Buyers Choose Satoshi Drive",
     icon: markIcon, // just one icon used globally (e.g., handshake icon)
     items: [
       "Pay directly in crypto — no need to convert or cash out",

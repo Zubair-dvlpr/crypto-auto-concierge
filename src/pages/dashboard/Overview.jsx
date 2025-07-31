@@ -5,7 +5,7 @@ const Overview = () => {
     { title: 'Total New Leads', value: 148 },
     { title: 'Total Payouts Sent', value: 148 },
     { title: 'Partner Locations', value: 12 },
-    { title: 'CAC Fees Collected', value: "$123,000" },
+    { title: 'Satoshi Drive Fees Collected', value: "$123,000" },
     { title: 'Total Partner Earnings', value: "$123,000" },
   ];
 

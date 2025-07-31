@@ -8,7 +8,7 @@ const Pagetitle = () => {
                 Stay Informed with the Latest on Crypto <span className='text-[#7CFEFD]'>Transactions & Vehicle Deals  </span>
             </h2>
             <p className="text-lg md:text-xl mb-6 max-w-[651px] mx-auto">
-                At Crypto Auto Concierge, we believe knowledge builds confidence.
+                At Satoshi Drive, we believe knowledge builds confidence.
                 Our Blog & Updates section brings you insights on:
             </p>
         </div>

@@ -6,17 +6,17 @@ import CustomSelect from "../../contact/components/CustomSelect";
 
 const Step8 = ({ data, setData }) => {
     const cacLocationOptions = [
-        "CAC Toronto",
-        "CAC Mississauga",
-        "CAC London",
-        "CAC Scarborough",
-        "CAC Pickering"
+        "Satoshi Drive Toronto",
+        "Satoshi Drive Mississauga",
+        "Satoshi Drive London",
+        "Satoshi Drive Scarborough",
+        "Satoshi Drive Pickering"
     ];
 
     return (
         <div className="text-white space-y-6">
             <h2 className="text-xl font-semibold">
-                You’ll receive an email with transaction details. A CAC team member will call both parties to confirm.
+                You’ll receive an email with transaction details. A Satoshi Drive team member will call both parties to confirm.
             </h2>
 
             {/* Meeting Date */}

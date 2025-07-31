@@ -15,9 +15,9 @@ import markIcon from '../../assets/images/Wavy_Check.svg';
 
 
 const stepsData = [
-  { icon: cacloction, title: 'Meet at a CAC Partner Location' },
+  { icon: cacloction, title: 'Meet at a Satoshi Drive Partner Location' },
   { icon: instant, title: 'Instant Crypto Fund Verification' },
-  { icon: SecurePayment, title: 'Secure Seller Payment Arranged by CAC' },
+  { icon: SecurePayment, title: 'Secure Seller Payment Arranged by Satoshi Drive' },
   { icon: CACPaperwork, title: 'Optional Registration & Paperwork Completed' },
 ];
 
@@ -34,7 +34,7 @@ const sellerFeatures = [
   "Optional lien payoff — We handle loan closures and registration for just $149",
   "Instant crypto fund verification — No guesswork, we monitor wallets and block flagged or blacklisted activity",
   "Concierge-style support — We assist with paperwork, tax remittance, and Service Ontario submission",
-  "In-person payout available — Meet us at a CAC partner location for secure handover"
+  "In-person payout available — Meet us at a Satoshi Drive partner location for secure handover"
 ];
 
 
@@ -48,7 +48,7 @@ const Services = () => {
         position="left"
       />
       <WhyChooseUs
-        title="Why Choose Crypto Auto Concierge?"
+        title="Why Choose Satoshi Drive?"
         image={whychooseimg}
         buyers={buyerFeatures}
         sellers={sellerFeatures}

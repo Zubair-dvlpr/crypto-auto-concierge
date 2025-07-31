@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Column 1: Logo + Tagline */}
         <div className="col-span-2">
           <Link to="/">
-            <img src={logo} alt="Crypto Auto Concierge" className="mb-3" />
+            <img src={logo} alt="Satoshi Drive" className="mb-3" />
           </Link>
           <p className="text-base text-[#ffffffcc] leading-7">
             Buy With Crypto. Seller Gets Dollars. Any Vehicle, Any Marketplace, Anywhere in Canada.
@@ -37,7 +37,7 @@ const Footer = () => {
             <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             <li><Link to="/about" className="hover:text-white">About Us</Link></li>
             <li><Link to="/investorpartnerships" className="hover:text-white">Become Partner</Link></li>
-            <li><Link to="/investorpartnerships" className="hover:text-white">Investor Relations</Link></li>
+            <li><Link to="/investor-Form" className="hover:text-white">Investor Relations</Link></li>
           </ul>
         </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="max-w-[1240px] mx-auto border-t border-gray-700 mt-10 py-4 px-4 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p>Crypto Auto Concierge (CAC)™ {new Date().getFullYear()}, All Right Reserved.</p>
+        <p>Satoshi Drive™ {new Date().getFullYear()}, All Right Reserved.</p>
         <div className="flex gap-3 mt-2 md:mt-0">
           <Link to={"/termsofservice"} className="hover:text-white">Terms of Service</Link>
           <span>|</span>

@@ -11,8 +11,6 @@ import Step5 from "./components/Step5";
 const PartnershipForm = () => {
     const [step, setStep] = useState(1); // Track current step
     const [formData, setFormData] = useState({
-        // ✅ Step1 Fields
-        party: "",
         // ✅ Step2 Fields
         companyName: "",
         businessNumber: "",
@@ -45,7 +43,6 @@ const PartnershipForm = () => {
         3: "Join Our Partnership Program - Inquire Now!",
         4: "Join Our Partnership Program - Inquire Now!",
         5: "Join Our Partnership Program - Inquire Now!",
-        6: "Join Our Partnership Program - Inquire Now!",
     };
 
     const nextStep = () => {
@@ -82,16 +79,14 @@ const PartnershipForm = () => {
     const renderStep = () => {
         switch (step) {
             case 1:
-                return <Step1 ref={stepRef} data={formData} setData={setFormData} />;
-            case 2:
                 return <Step2 ref={stepRef} data={formData} setData={setFormData} />;
-            case 3:
+            case 2:
                 return <Step3 ref={stepRef} data={formData} setData={setFormData} />;
-            case 4:
+            case 3:
                 return <Step4 ref={stepRef} data={formData} setData={setFormData} />;
-            case 5:
+            case 4:
                 return <Step5 ref={stepRef} data={formData} setData={setFormData} />;
-            case 6:
+            case 5:
                 return <Step6 ref={stepRef} data={formData} setData={setFormData} />;
 
             default:
@@ -111,7 +106,7 @@ const PartnershipForm = () => {
                             </h2>
                             <h1 className="text-2xl font-bold capitalize leading-10 mb-4">{stepTitles[step]}</h1>
                             <p className="text-[#00D2FF] font-semibold  text-xl leading-7 mb-3.5">
-                                Step {step}/6
+                                Step {step}/5
                             </p>
                             {renderStep()}
                             {error && <p className="text-red-500">{error}</p>}
@@ -124,7 +119,7 @@ const PartnershipForm = () => {
                             >
                                 Previous
                             </button>
-                            {step === 6 ? (
+                            {step === 5 ? (
                                 <button
                                     onClick={handleSubmit}
                                     className="btn-style"

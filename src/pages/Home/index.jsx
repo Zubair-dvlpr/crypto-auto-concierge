@@ -19,7 +19,7 @@ const Home = () => {
       <TrustedProcess />
       <WhyChooseCrypto />
       <Testimonials
-        title="Crypto Auto Concierge— Real Client Experiences"
+        title="Satoshi Drive— Real Client Experiences"
         description="Real Clients. Real Deals. Verified Payouts."
       />
       <CryptoPartners />

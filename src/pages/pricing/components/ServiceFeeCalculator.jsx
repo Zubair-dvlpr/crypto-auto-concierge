@@ -6,34 +6,56 @@ const ServiceFeeCalculator = () => {
     const [serviceFee, setServiceFee] = useState('');
     const [showMessage, setShowMessage] = useState(true);
 
+    // Format number with commas and 2 decimal places
+    const formatCurrency = (num) => {
+        return num.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    };
+
     const calculateFee = () => {
-        const price = parseFloat(vehiclePrice);
-        if (!isNaN(price) && price > 0) {
+        // Remove all non-numeric characters except decimal point
+        const numericValue = parseFloat(vehiclePrice.replace(/[^0-9.]/g, ''));
+        
+        if (!isNaN(numericValue) && numericValue > 0) {
             let fee = 0;
             
-            if (price >= 5000 && price <= 10000) {
+            if (numericValue >= 5000 && numericValue <= 10000) {
                 fee = 595;
-            } else if (price >= 10001 && price <= 25000) {
+            } else if (numericValue >= 10001 && numericValue <= 25000) {
                 fee = 895;
-            } else if (price >= 25001 && price <= 50000) {
+            } else if (numericValue >= 25001 && numericValue <= 50000) {
                 fee = 1495;
-            } else if (price >= 50001 && price <= 100000) {
-                fee = Math.max(price * 0.0225, 1750);
-            } else if (price >= 100001 && price <= 250000) {
-                fee = Math.max(price * 0.02, 2750);
-            } else if (price >= 250001 && price <= 500000) {
-                fee = Math.max(price * 0.015, 4000);
-            } else if (price > 500000) {
-                fee = Math.max(price * 0.0125, 6000);
+            } else if (numericValue >= 50001 && numericValue <= 100000) {
+                fee = Math.max(numericValue * 0.0225, 1750);
+            } else if (numericValue >= 100001 && numericValue <= 250000) {
+                fee = Math.max(numericValue * 0.02, 2750);
+            } else if (numericValue >= 250001 && numericValue <= 500000) {
+                fee = Math.max(numericValue * 0.015, 4000);
+            } else if (numericValue > 500000) {
+                fee = Math.max(numericValue * 0.0125, 6000);
             } else {
-                fee = 0; // Price too low
+                fee = 0;
             }
             
-            setServiceFee(fee.toFixed(2));
+            setServiceFee(formatCurrency(fee));
             setShowMessage(false);
         } else {
             setServiceFee('');
             setShowMessage(true);
+        }
+    };
+
+    // Handle input change with proper formatting
+    const handlePriceChange = (e) => {
+        const value = e.target.value;
+        
+        // Allow only numbers and decimal point
+        if (value === '' || /^[0-9]*\.?[0-9]*$/.test(value)) {
+            // Format with commas as user types
+            const parts = value.split('.');
+            parts[0] = parts[0].replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            
+            const formattedValue = parts.length > 1 ? `${parts[0]}.${parts[1]}` : parts[0];
+            setVehiclePrice(formattedValue);
         }
     };
 
@@ -51,12 +73,11 @@ const ServiceFeeCalculator = () => {
                         Enter Your Vehicle Purchase Price ($)
                     </label>
                     <input
-                        type="number"
-                        placeholder="Enter Price"
+                        type="text"
+                        placeholder="15,000.00"
                         value={vehiclePrice}
-                        onChange={(e) => setVehiclePrice(e.target.value)}
+                        onChange={handlePriceChange}
                         className="w-full p-5 rounded-xl focus:outline-none bg-gradient-to-r from-[#2e6cf41a] to-[#00d2ff1a] focus:ring-2 focus:ring-purple-500"
-                        min="5000"
                     />
                 </div>
 
@@ -69,7 +90,7 @@ const ServiceFeeCalculator = () => {
                         type="text"
                         value={serviceFee ? `$${serviceFee}` : ''}
                         readOnly
-                        placeholder="Calculated Fee"
+                        placeholder="1,495.00"
                         className="w-full p-5 rounded-xl focus:outline-none bg-gradient-to-r from-[#2e6cf41a] to-[#00d2ff1a] focus:ring-2 focus:ring-purple-500"
                     />
                 </div>

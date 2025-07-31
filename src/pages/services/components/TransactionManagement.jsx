@@ -18,7 +18,7 @@ const TransactionManagement = () => {
             Crypto-to-Cash Vehicle Transactions Made Easy
           </h2>
           <p className="text-xl leading-9">
-            We manage every step of your crypto vehicle transaction — from fund verification to seller payment, paperwork, and registration. With CAC, you get trusted service, full transparency, and a seamless experience.
+            We manage every step of your crypto vehicle transaction — from fund verification to seller payment, paperwork, and registration. With Satoshi Drive, you get trusted service, full transparency, and a seamless experience.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const TransactionManagement = () => {
               <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Interac e-Transfer (EMT)</li>
               <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Bank Wire Transfer</li>
               <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Certified Bank Draft or Cheque</li>
-              <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Cash (in-person at a CAC location)</li>
+              <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Cash (in-person at a Satoshi Drive location)</li>
               <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Crypto (BTC, ETH, USDT – if preferred)</li>
               <li className="flex items-start gap-3"><img src={markIcon} className="w-5 h-5 mt-1" alt="icon" /> Lien Payoff & Protection – $149</li>
             </ul>
@@ -69,7 +69,7 @@ const TransactionManagement = () => {
               </button>
               {activeTab === 0 && (
                 <div className="text-lg leading-7 pb-3 text-[#ffffffd0]">
-                  We audit every transaction before closing. CAC monitors all incoming wallets, checks for blacklist status, and verifies the source of funds for transparency, fraud prevention, and seller peace of mind.
+                  We audit every transaction before closing. Satoshi Drive monitors all incoming wallets, checks for blacklist status, and verifies the source of funds for transparency, fraud prevention, and seller peace of mind.
                 </div>
               )}
             </div>
@@ -85,7 +85,7 @@ const TransactionManagement = () => {
               </button>
               {activeTab === 1 && (
                 <div className="text-lg leading-7 pb-3 text-[#ffffffd0]">
-                  Whether it’s Facebook Marketplace, Kijiji, Autotrader, or a direct buyer—CAC acts as your trusted third party to secure the payment, verify the buyer, and handle the deal from end to end.
+                  Whether it’s Facebook Marketplace, Kijiji, Autotrader, or a direct Satoshi Drive acts as your trusted third party to secure the payment, verify the buyer, and handle the deal from end to end.
                 </div>
               )}
             </div>

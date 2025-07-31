@@ -11,7 +11,7 @@ const Step9 = ({ data, setData }) => {
         {
             key: "lienCheck",
             description:
-                "I confirm that the information provided is accurate and I agree to Crypto Auto Concierge’s Terms of Service.",
+                "I confirm that the information provided is accurate and I agree to Satoshi Drive Terms of Service.",
         },
     ];
 

@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const InvestorPartnerships = () => {
   const marketNeed1 = {
-    title: "Why the Market Needs a Service Like CAC",
+    title: "Why the Market Needs a Service Like Satoshi Drive",
     icon: markIcon,
     items: [
       "Crypto is increasingly used in high-value purchases like vehicles",
@@ -22,7 +22,7 @@ const InvestorPartnerships = () => {
   };
 
   const marketNeed2 = {
-    title: "Why the Market Needs a Service Like CAC",
+    title: "Why the Market Needs a Service Like Satoshi Drive",
     icon: markIcon,
     items: [
       "Headquartered at 200 Front Street West, Toronto — operating in Canada’s business and automotive hub.",
@@ -58,7 +58,7 @@ const InvestorPartnerships = () => {
     description: "Contact Our Leadership Team",
     items: [
       { text: "905-409-0992", icon: phoneIcon },
-      { text: "CAC212@gmail .com", icon: emailIcon }
+      { text: "SatoshiDrive@gmail .com", icon: emailIcon }
     ]
   };
 
@@ -66,7 +66,7 @@ const InvestorPartnerships = () => {
     <div className='pt-32 relative before:content-[] before:block before:w-[458px] before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px] bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }}>
       <PagetitleSection
         title={"Delivering Verified Crypto Transactions for the Automotive Market"}
-        paragraph={"At Crypto Auto Concierge (CAC), we focus on making crypto vehicle transactions secure, transparent, and compliant. We combine experience in the automotive industry with a practical understanding of how cryptocurrency is reshaping private sales. Our role is straightforward — we help buyers and sellers complete verified transactions backed by proper compliance and professional handling."}
+        paragraph={"At Satoshi Drive, we focus on making crypto vehicle transactions secure, transparent, and compliant. We combine experience in the automotive industry with a practical understanding of how cryptocurrency is reshaping private sales. Our role is straightforward — we help buyers and sellers complete verified transactions backed by proper compliance and professional handling."}
       />
 
       <div className='relative after:content-[] after:block after:w-[376px] after:h-[376px] after:bg-[#ca19ff66] after:absolute after:top-1/3 after:left-0 after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>

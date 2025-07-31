@@ -30,7 +30,7 @@ const About = () => {
     <div  className='pt-28    bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }}>
       <TwoSectionLayout />
       <HowItWorksSection
-        title="Why Clients Choose CAC"
+        title="Why Clients Choose Satoshi Drive"
         steps={stepsAboutData}
         position="center"
       />

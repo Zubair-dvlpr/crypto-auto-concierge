@@ -11,7 +11,7 @@ const Privacypolicy = () => {
 
   const ScopeofPolicy = {
     title: "Scope of Policy",
-    description: "Crypto Auto Concierge (CAC) is a Canadian-based company that provides a secure and compliant platform for buying and selling vehicles using cryptocurrency. Our services are designed to facilitate transactions between buyers and sellers while ensuring compliance with Canadian laws and regulations.",
+    description: "Satoshi Drive (Satoshi Drive) is a Canadian-based company that provides a secure and compliant platform for buying and selling vehicles using cryptocurrency. Our services are designed to facilitate transactions between buyers and sellers while ensuring compliance with Canadian laws and regulations.",
   };
 
   const CollectYourInformation = {
@@ -70,7 +70,7 @@ const Privacypolicy = () => {
     items: [
       "When required by law, regulation, or court order",
       "With client consent for a specific purpose",
-      "To our CAC-approved partners for transaction facilitation and compliance verification",
+      "To our Satoshi Drive-approved partners for transaction facilitation and compliance verification",
     ]
   };
 
@@ -97,7 +97,7 @@ const Privacypolicy = () => {
     items: [
       { text: "905-409-0992", icon: phoneIcon },
       { text: "200 Front Street West, Toronto, Ontario, Canada ", icon: locationIcon },
-      { text: "CAC212@gmail.com", icon: emailIcon }
+      { text: "SatoshiDrive@gmail.com", icon: emailIcon }
     ],
     buttonText: "Contact Us",
     buttonLink: "/contact"
@@ -106,7 +106,7 @@ const Privacypolicy = () => {
   return (
     <div className='pt-32 relative  before:content-[] before:block before:w-[458px]  before:h-[458px] before:bg-[#7cfefdb3] before:absolute before:top-[-100px] before:left-[-100px] before:rounded-full before:z-[-1] before:blur-[245.20001220703125px]   bg-top bg-no-repeat pricig-bg-cover' style={{ backgroundImage: `url('${pricingbgtop}')` }} >
       <PagetitleSection
-        paragraph={"At Crypto Auto Concierge (CAC), we are committed to protecting the privacy and confidentiality of all client information. This Privacy Policy explains how we collect, use, disclose, and protect personal information in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable Ontario laws."}
+        paragraph={"At Satoshi Drive, we are committed to protecting the privacy and confidentiality of all client information. This Privacy Policy explains how we collect, use, disclose, and protect personal information in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable Ontario laws."}
       />
 
       <div className='relative after:content-[] after:block after:w-[376px]  after:h-[376px] after:bg-[#ca19ff66] after:absolute after:top-1/3 after:left-0 after:rounded-full after:z-[-1] after:blur-[245.20001220703125px]'>

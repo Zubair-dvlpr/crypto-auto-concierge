@@ -14,11 +14,11 @@ const ContactForm = () => {
         "Crypto Buyer – Looking to Purchase a Vehicle",
         "Seller – Accepting Cash or Crypto for My Vehicle",
         "Dealership – Interested in Accepting Crypto Payments",
-        "Private Party – Selling or Buying with CAC Help",
+        "Private Party – Selling or Buying with Satoshi Drive Help",
         "Business Partner / Vendor",
         "Investor / Strategic Collaborator",
         "Returning Client / Ongoing Deal",
-        "General Inquiry / Learning About CAC",
+        "General Inquiry / Learning About Satoshi Drive",
     ];
 
     const [errors, setErrors] = useState({});

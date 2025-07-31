@@ -9,7 +9,7 @@ const Step4 = forwardRef(({ data, setData }, ref) => {
     validate: () => {
       if (!data.crypto1) return "Please select a preferred payment method (Crypto #1).";
       if (!data.crypto1Amount?.trim()) return "Please enter an amount for the selected cryptocurrency.";
-      if (!data.totalCAD?.trim()) return "Please enter the total value in CAD (CAC fees).";
+      if (!data.totalCAD?.trim()) return "Please enter the total value in CAD (Satoshi Drive fees).";
       return true;
     },
   }));
@@ -64,7 +64,7 @@ const Step4 = forwardRef(({ data, setData }, ref) => {
 
       {/* Total Dollar Amount */}
       <label className="block mb-6">
-        <span className="block mb-4 text-lg font-semibold leading-7">CAC Fees</span>
+        <span className="block mb-4 text-lg font-semibold leading-7">Satoshi Drive Fees</span>
         <input
           type="text"
           placeholder="Total Value in CAD"

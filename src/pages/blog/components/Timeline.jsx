@@ -74,7 +74,7 @@ const Timeline = () => {
                     <div class="lg:w-2/5 w-4/5 mb-10  sm:2/3 flex p-6  bg-gradient-to-r from-[#2e6cf41a] to-[#00d2ff1a] rounded-xl">
                         <p className='text-lg flex items-start gap-2 '>
                             <img src={markIcon} alt="" />
-                            CAC service updates, partner announcements, and new locations
+                            Satoshi Drive service updates, partner announcements, and new locations
                         </p>
                     </div>
 

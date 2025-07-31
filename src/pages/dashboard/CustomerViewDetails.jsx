@@ -160,14 +160,14 @@ const CustomerViewDetails = () => {
                                 <div className="text-white font-bold text-xl sm:text-2xl">$338,200</div>
                             </div>
                             <div>
-                                <label className="text-white text-sm font-medium">CAC FEES</label>
+                                <label className="text-white text-sm font-medium">Satoshi Drive FEES</label>
                                 <div className="text-white font-bold text-xl sm:text-2xl">$1,1100</div>
                             </div>
                         </div>
 
                         <div>
                             <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-                                <label className="text-white text-sm font-medium">CAC Wallet</label>
+                                <label className="text-white text-sm font-medium">Satoshi Drive Wallet</label>
                                 <span className="text-xs text-slate-400">Copy Wallet Address/Send to buyer</span>
                             </div>
                             <div className="flex items-center gap-2 bg-gradient p-3 rounded-lg">

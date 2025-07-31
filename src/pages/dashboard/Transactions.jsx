@@ -11,7 +11,7 @@ const Transactions = () => {
   { label: "Buyer", key: "buyer" },
   { label: "Vehicle", key: "vehicle" },
   { label: "Amount", key: "amount" },
-  { label: "Cac Fee", key: "cacFee" },
+  { label: "Satoshi Drive Fee", key: "cacFee" },
   { label: "Partner fee", key: "partnerFee" },
   { label: "Date Created", key: "date" },
   { label: "Status", key: "status" },

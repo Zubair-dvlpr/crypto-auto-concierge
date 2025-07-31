@@ -8,7 +8,7 @@ const Step7 = ({ data, setData }) => {
     return (
         <div>
             <h3 className="appointment-title">
-                Once you and the buyer meet at the CAC location, we’ll issue your payout on the spot. For wire, we’ll confirm details in advance.
+                Once you and the buyer meet at the Satoshi Drive location, we’ll issue your payout on the spot. For wire, we’ll confirm details in advance.
             </h3>
             {/* Preferred Payment Method */}
             <label className="block mb-6">

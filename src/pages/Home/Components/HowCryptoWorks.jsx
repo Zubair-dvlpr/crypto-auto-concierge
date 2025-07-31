@@ -20,8 +20,8 @@ const HowCryptoWorks = () => {
         },
         {
             icon: Location,
-            title: 'Meet at a CAC Partner Location',
-            content: 'We arrange a secure in-person meeting at a trusted CAC location, or virtually if agreed by both parties.'
+            title: 'Meet at a Satoshi Drive Partner Location',
+            content: 'We arrange a secure in-person meeting at a trusted Satoshi Drive location, or virtually if agreed by both parties.'
         },
         {
             icon: Crypto,
@@ -49,7 +49,7 @@ const HowCryptoWorks = () => {
                     <img src={downArrow} alt="" />
                 </div>
                 <h2 className="text-3xl mt-4 font-bold mb-4">
-                    How Crypto Auto Concierge Works
+                    How Satoshi Drive Works
                 </h2>
                 <p className="mb-10 max-w-2xl">
                     Buy or Sell Any Car with Crypto — Instantly.

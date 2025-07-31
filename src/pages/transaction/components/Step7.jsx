@@ -21,7 +21,7 @@ const Step7 = forwardRef(({ data, setData }, ref) => {
   return (
     <div>
       <h3 className="appointment-title">
-        Once you and the buyer meet at the CAC location, we’ll issue your payout on the spot.
+        Once you and the buyer meet at the Satoshi Drive location, we’ll issue your payout on the spot.
         For wire, we’ll confirm details in advance.
       </h3>
 

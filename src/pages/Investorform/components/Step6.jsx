@@ -25,7 +25,7 @@ const Step6 = forwardRef(({ data, setData }, ref) => {
         </span>
         <textarea
           rows="5"
-          placeholder="Describe your business and your interest in partnering with CAC"
+          placeholder="Describe your business and your interest in partnering with Satoshi Drive"
           value={data.businessDescription || ""}
           onChange={(e) => setData({ ...data, businessDescription: e.target.value })}
           className="input-style"
@@ -49,7 +49,7 @@ const Step6 = forwardRef(({ data, setData }, ref) => {
             {data.confirmed && <GoDotFill className="text-[#00D2FF]" />}
           </span>
           <span className="ml-2.5 font-poppins text-base font-medium leading-7">
-            I confirm that the information provided is accurate and understand that CAC will conduct a full partner vetting process prior to any partnership agreement.
+            I confirm that the information provided is accurate and understand that Satoshi Drive will conduct a full partner vetting process prior to any partnership agreement.
           </span>
         </label>
       </div>

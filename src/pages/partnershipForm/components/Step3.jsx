@@ -16,7 +16,7 @@ const Step3 = forwardRef(({ data, setData }, ref) => {
 
   return (
     <div>
-      <h3 className="appointment-title">Please Enter the Buyer's Details</h3>
+      <h3 className="appointment-title"> Please enter the details of point of contact</h3>
 
       {/* Full Name */}
       <label className="block mb-6">

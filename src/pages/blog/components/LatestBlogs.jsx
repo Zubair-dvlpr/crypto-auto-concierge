@@ -21,7 +21,7 @@ const blogData = [
   {
     id: 3,
     date: '03 July 2025',
-    title: 'New CAC Partner Locations — Serving the GTA & Beyond',
+    title: 'New Satoshi Drive Partner Locations — Serving the GTA & Beyond',
     image: blogimg3,
   },
   {
