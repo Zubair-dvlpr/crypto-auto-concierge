@@ -26,6 +26,8 @@ import Approvedcryptos from './pages/dashboard/Approvedcryptos';
 import Marketing from './pages/dashboard/Marketing';
 import Login from './pages/login/Index';
 import Singup from './pages/signup/Index';
+import CustomerViewDetails from './pages/dashboard/CustomerViewDetails';
+import InvestorForm from './pages/Investorform/Index';
 
 const PrivateRoute = ({ children }) => {
   const { user, } = useContext(AuthContext);
@@ -49,6 +51,7 @@ const ViewRoutes = () => {
       <Route path="/privacypolicy" element={<DefaultLayout><Privacypolicy /></DefaultLayout>} />
       <Route path="/saller" element={<DefaultLayout><Saller /></DefaultLayout>} />
       <Route path="/buyer" element={<DefaultLayout><Buyer /></DefaultLayout>} />
+      <Route path="/investor-Form" element={<DefaultLayout><InvestorForm /></DefaultLayout>} />
 
       <Route path="/login" element={<Login />} />
       <Route path="/sign-up" element={<Singup />} />
@@ -59,6 +62,7 @@ const ViewRoutes = () => {
       <Route path="/current-partner" element={<DashboardLayout><CurrentPartner /></DashboardLayout>} />
       <Route path="/approved-cryptos" element={<DashboardLayout><Approvedcryptos /></DashboardLayout>} />
       <Route path="/marketing" element={<DashboardLayout><Marketing /></DashboardLayout>} />
+      <Route path="/customer-details" element={<DashboardLayout><CustomerViewDetails /></DashboardLayout>} />
       <Route path="*" element={"error page"} />
     </Routes>
   );

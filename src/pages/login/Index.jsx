@@ -62,7 +62,6 @@ const Login = () => {
                                 Sign In
                             </button>
                         </Link>
-
                     </div>
                 </form>
                 <div className="text-center mt-6">

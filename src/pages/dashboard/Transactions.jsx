@@ -1,5 +1,7 @@
 import React from 'react'
 import DealTable from './Components/DealTable'
+import { FaEdit, FaEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Transactions = () => {
 
@@ -15,12 +17,12 @@ const Transactions = () => {
   { label: "Status", key: "status" },
   { label: "Actions", key: "actions", render: (item) => (
     <div className="flex justify-center gap-3">
-      <button className="text-white hover:text-[#D015FF]">
+      <Link to={'/customer-details'} className="text-white hover:text-[#D015FF]">
         <FaEye />
-      </button>
-      <button className="text-white hover:text-[#D015FF]">
+      </Link>
+      <Link className="text-white hover:text-[#D015FF]">
         <FaEdit />
-      </button>
+      </Link>
     </div>
   )}
 ];

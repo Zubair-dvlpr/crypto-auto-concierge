@@ -5,12 +5,29 @@ import { Link } from 'react-router-dom';
 
 const OurPricing = () => {
   const pricingData = [
-    { priceRange: "$5,000 – $10,000", serviceFee: "$500 flat" },
-    { priceRange: "$10,001 – $25,000", serviceFee: "$750 flat" },
-    { priceRange: "$25,001 – $50,000", serviceFee: "$1,250 flat" },
-    { priceRange: "$50,001 – $100,000", serviceFee: "2% of vehicle price" },
-    { priceRange: "$100,001 – $250,000", serviceFee: "2% of vehicle price" },
-    { priceRange: "$250,001+", serviceFee: "1% of vehicle price" }
+    { priceRange: "$5,000 – $10,000", serviceFee: "$595 flat" },
+    { priceRange: "$10,001 – $25,000", serviceFee: "$895 flat" },
+    { priceRange: "$25,001 – $50,000", serviceFee: "$1,495 flat" },
+    { 
+      priceRange: "$50,001 – $100,000", 
+      serviceFee: "2.25% of vehicle price",
+      note: "(Min: $1,750)" 
+    },
+    { 
+      priceRange: "$100,001 – $250,000", 
+      serviceFee: "2.00% of vehicle price",
+      note: "(Min: $2,750)" 
+    },
+    { 
+      priceRange: "$250,001 – $500,000", 
+      serviceFee: "1.50% of vehicle price",
+      note: "(Min: $4,000)" 
+    },
+    { 
+      priceRange: "$500,001+", 
+      serviceFee: "1.25% of vehicle price",
+      note: "(Min: $6,000)" 
+    }
   ];
 
   const whatsIncluded = [
@@ -40,7 +57,7 @@ const OurPricing = () => {
         <table className="w-full table-auto border border-gray-300 border-collapse rounded-xl overflow-hidden shadow-md">
           <thead>
             <tr className="bg-purple-600 text-white text-center">
-              <th className="p-4 border border-gray-300">Vehicle Price</th>
+              <th className="p-4 border border-gray-300">Vehicle Price Range</th>
               <th className="p-4 border border-gray-300">Service Fee</th>
             </tr>
           </thead>
@@ -48,17 +65,19 @@ const OurPricing = () => {
             {pricingData.map((item, index) => (
               <tr key={index} className="text-center">
                 <td className="p-4 border border-gray-300">{item.priceRange}</td>
-                <td className="p-4 border border-gray-300">{item.serviceFee}</td>
+                <td className="p-4 border border-gray-300">
+                  {item.serviceFee}
+                  {item.note && <div className="text-sm text-gray-600">{item.note}</div>}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-
       {/* Right Side: Content */}
       <div className="flex col-span-4 flex-col justify-end">
-        <h2 className="text-4xl font-bold leading-12 mb-4">What’s Included</h2>
+        <h2 className="text-4xl font-bold leading-12 mb-4">What's Included</h2>
 
         <ul className="space-y-4 text-xl mb-6">
           {whatsIncluded.map((desc, i) => (

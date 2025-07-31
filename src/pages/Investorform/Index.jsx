@@ -5,34 +5,21 @@ import carImg from "../../assets/images/carimg.png";
 import pricingbgtop from '../../assets/images/pricebgtop.png'
 import Step3 from "./components/Step3";
 import Step4 from "./components/Step4";
-import Step6 from "./components/Step6";
-import Step5 from "./components/Step5";
 
-const PartnershipForm = () => {
+const Investorform = () => {
     const [step, setStep] = useState(1); // Track current step
     const [formData, setFormData] = useState({
-        // ✅ Step1 Fields
         party: "",
-        // ✅ Step2 Fields
-        companyName: "",
-        businessNumber: "",
-        registrationLocation: "",
-        headOfficeAddress: "",
-        companyWebsite: "",
-        // ✅ Step3 Fields
+        businessTypes: "",
+        interested: "",
+        investmentRange: "",
+        schedulePreference: "",
+        // Step3 Fields
         fullName: "",
         position: "",
-        emailAddress: "",      // already exists, no change needed
+        emailAddress: "",
         phoneNumber: "",
-
-        businessTypes: [],  // Array to hold selected business types
-
-        registeredWithFintrac: "Yes",
-        hasKycAmlPolicy: "No",
-        canProvideComplianceDocs: "Yes",
-
-        businessDescription: "",  // (string) User input from textarea
-        confirmed: false          // (boolean) Confirmation checkbox
+        website: "",  // Optional field
     });
 
     const [error, setError] = useState(null);
@@ -40,12 +27,17 @@ const PartnershipForm = () => {
 
     // Titles for each step
     const stepTitles = {
-        1: "Let Us Do The Work — Just Answer A Few Quick Questions",
-        2: "Join Our Partnership Program - Inquire Now!",
-        3: "Join Our Partnership Program - Inquire Now!",
+        1: "Let’s Build the Future of Automotive Commerce — Join Us as an Investor",
+        2: "Discover how you can be part of the future of crypto-powered vehicle transactions.",
+        3: "Our team will review your message and respond within 1–2 business days.",
         4: "Join Our Partnership Program - Inquire Now!",
-        5: "Join Our Partnership Program - Inquire Now!",
-        6: "Join Our Partnership Program - Inquire Now!",
+    };
+
+    const steptitle = {
+        1: "Investor Onboarding / Investment Interest Form",
+        2: "Investment Inquiry",
+        3: "Introduce Yourself",
+        4: "Become our partner",
     };
 
     const nextStep = () => {
@@ -89,10 +81,6 @@ const PartnershipForm = () => {
                 return <Step3 ref={stepRef} data={formData} setData={setFormData} />;
             case 4:
                 return <Step4 ref={stepRef} data={formData} setData={setFormData} />;
-            case 5:
-                return <Step5 ref={stepRef} data={formData} setData={setFormData} />;
-            case 6:
-                return <Step6 ref={stepRef} data={formData} setData={setFormData} />;
 
             default:
                 return <div>Step {step} content goes here...</div>;
@@ -107,11 +95,11 @@ const PartnershipForm = () => {
                     <div className="w-full sm:w-1/2 bg-gradient-to-r from-[#2e6cf41a] to-[#00d2ff1a] flex flex-col justify-between rounded-xl  p-6">
                         <div>
                             <h2 className="text-[#00D2FF] font-semibold  text-xl leading-7 mb-2">
-                                Become our partner
+                                {steptitle[step]}
                             </h2>
                             <h1 className="text-2xl font-bold capitalize leading-10 mb-4">{stepTitles[step]}</h1>
                             <p className="text-[#00D2FF] font-semibold  text-xl leading-7 mb-3.5">
-                                Step {step}/6
+                                Step {step}/4
                             </p>
                             {renderStep()}
                             {error && <p className="text-red-500">{error}</p>}
@@ -124,7 +112,7 @@ const PartnershipForm = () => {
                             >
                                 Previous
                             </button>
-                            {step === 6 ? (
+                            {step === 4 ? (
                                 <button
                                     onClick={handleSubmit}
                                     className="btn-style"
@@ -156,4 +144,4 @@ const PartnershipForm = () => {
     );
 };
 
-export default PartnershipForm;
+export default Investorform;
